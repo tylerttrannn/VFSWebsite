@@ -2,7 +2,7 @@ import React from "react";
 import HeroImage from "../../assets/images/hero.webp"
 import CustomLogo from "../../components/CustomLogo.jsx";
 
-export default function Hero(){
+export default function HeroSection(){
     return (
         <div className="relative w-screen h-[26rem]">
             <img
@@ -14,7 +14,7 @@ export default function Hero(){
             <div className="absolute inset-0 flex flex-col justify-center items-center bg-black bg-opacity-50 text-white gap-6">
                 <CustomLogo />
                 <h1 className="text-4xl md:text-5xl font-bold">Welcome to the Vertical Flight Society at UCI</h1>
-                <p className="text-lg md:text-4xl md:max-w-4xl mx-auto text-center font-light">A hub for all engineers at UCI to explore vertical flight technology and aerospace.</p>
+                <p className="text-lg md:text-3xl md:max-w-4xl mx-auto text-center font-light">A hub for all engineers at UCI to explore vertical flight technology and aerospace.</p>
             </div>
         </div>
     )
