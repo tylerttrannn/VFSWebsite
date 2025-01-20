@@ -9,7 +9,7 @@ import {faDiscord} from "@fortawesome/free-brands-svg-icons";
 export default function Navbar() {
     return (
         <div className="flex flex-row justify-between items-center lg:mx-10">
-            <img className="w-[140px]" src={Logo} alt="VFS-Logo" />
+            <img className="w-[140px]" src={Logo} alt="Vertical Flight Society Logo" />
             <div className="flex gap-12 text-grey">
                 <Link to="/">Home</Link>
                 <Link to="/about">About</Link>
