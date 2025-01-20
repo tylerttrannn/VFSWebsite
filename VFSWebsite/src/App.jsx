@@ -9,7 +9,7 @@ import Events from "./pages/Events.jsx";
 
 function App() {
   return (
-      <div className={""}>
+      <div>
           <Navbar/>
           <Routes>
               <Route path={'/'} element={<Home/>}/>
