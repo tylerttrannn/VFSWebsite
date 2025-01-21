@@ -14,7 +14,7 @@ export default function NewsletterSection() {
             <form>
                 <input
                     placeholder={"Email"}
-                    type={"text"} className={"rounded-sm p-2 pr-20"}
+                    type={"text"} className={"text-black rounded-sm p-2 pr-20"}
                     onSubmit={handleSubmit}
                     onChange={(e) => setEmail(e.target.value)} />
             </form>
