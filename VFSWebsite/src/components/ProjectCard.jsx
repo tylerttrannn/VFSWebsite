@@ -1,34 +1,25 @@
 import React from "react";
-import Plane from "../assets/images/plane.jpg";
 import { Link } from "react-router";
 
-export default function ProjectCard() {
+export default function ProjectCard({project}) {
     return (
-        <div className="flex flex-col justify-center items-center container my-5 max-w-6xl mx-auto">
+        <div className="flex flex-col justify-center items-center container my-8 max-w-6xl mx-auto">
             {/* Image and Text Section */}
             <div className="flex gap-10 items-stretch">
                 {/* Image Section */}
                 <div className="w-1/2 flex justify-center items-center">
                     <img
-                        src={Plane}
+                        src={project.image}
                         alt="Image of Plane"
                         className="h-full object-cover"
                     />
                 </div>
 
                 {/* Text Section */}
-                <div className="w-1/2 max-w-lg mx-auto flex flex-col justify-center gap-4">
-                    <h1 className="text-2xl font-bold">Student Design Competition (SDC)</h1>
-                    <p className="text-lg text-gray-700">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                        voluptate velit esse cillum dolore eu.
-                    </p>
-                    <Link
-                        to="/project"
-                        className="text-blue-600 hover:underline"
-                    >
+                <div className="w-1/2 flex flex-col justify-center gap-4">
+                    <h1 className="text-2xl font-bold">{project.header}</h1>
+                    <p className="text-lg text-gray-700">{project.description}</p>
+                    <Link to="/project" className="w-fit text-red text-md border-2 border-red p-2 px-8 rounded-lg font-medium hover:border-[#6F0B27] hover:text-[#6F0B27]">
                         View Project
                     </Link>
                 </div>

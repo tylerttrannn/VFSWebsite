@@ -44,14 +44,6 @@ export default function TeamSection() {
                 "https://static.wixstatic.com/media/66ee95_8ee3f992aed44717b6650de99470733e~mv2.png/v1/fill/w_336,h_404,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Screenshot%202024-06-12%20at%2020_37_21.png",
         },
         {
-            id: 5,
-            name: "Bob Brown",
-            position: "Secretary",
-            major: "Electrical Engineering",
-            picture:
-                "https://static.wixstatic.com/media/66ee95_456fd8416d25472f9b60b8ccb56aef74~mv2.jpeg/v1/fill/w_336,h_404,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/d.jpeg",
-        },
-        {
             id: 6,
             name: "Bob Brown",
             position: "Secretary",
