@@ -17,7 +17,13 @@ export default function ProjectSection() {
             image:Helicopter,
             header:"Student Design Competition (SDC)",
             description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
-        }
+        },
+        {
+            id:1,
+            image:Helicopter,
+            header:"Design-Build-Vertical Fly (DBVF)",
+            description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
+        },
     ]
     return (
         <div className="flex items-center justify-center">
@@ -31,8 +37,8 @@ export default function ProjectSection() {
                             </CarouselItem>
                         ))}
                     </CarouselContent>
-                    <CarouselPrevious className={"text-blue border-grey/50 border-2"}/>
-                    <CarouselNext className={"text-blue border-grey/50 border-2"}/>
+                    <CarouselPrevious className={"text-blue border-yellow border-2"}/>
+                    <CarouselNext className={"text-blue border-yellow border-2"}/>
                 </Carousel>
                 <div className="flex justify-center mt-5">
                     <Link
