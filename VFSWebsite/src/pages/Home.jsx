@@ -6,7 +6,7 @@ import TeamSection from "./HomeSections/TeamSection.jsx";
 import NewsletterSection from "./HomeSections/NewsletterSection.jsx";
 import ContactSection from "./HomeSections/ContactSection.jsx";
 import Divider from "../components/Divider.jsx";
-
+import Footer from "../components/Footer.jsx"
 export default function Home(){
     return (
         <div>
@@ -18,6 +18,7 @@ export default function Home(){
             <Divider/>
             <NewsletterSection/>
             <ContactSection/>
+            <Footer/>
         </div>
     )
 }
