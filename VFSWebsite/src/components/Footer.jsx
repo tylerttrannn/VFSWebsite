@@ -4,10 +4,14 @@ import Linkedin from "../assets/images/logos/linkedin.svg"
 import Twitter from "../assets/images/logos/twitter.svg"
 import Instagram from "../assets/images/logos/instagram.svg"
 import Facebook from "../assets/images/logos/facebook.svg"
+import {Link} from "react-router";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {faDiscord, faInstagram, faLinkedinIn} from "@fortawesome/free-brands-svg-icons";
+import React from "react";
 
 export default function Footer() {
     return (
-        <div className = "p-20">
+        <div className = "px-20 pt-10">
             {/* Links Container */}
             <div>
                 <div className="flex flex-row justify-start gap-96 p-5">
@@ -39,19 +43,23 @@ export default function Footer() {
                 </div>
 
                 {/* Bottom Section */}
-                <div className="flex flex-row justify-between items-center pt-10 px-5">
+                <div className="flex flex-row justify-between items-center py-5 px-5">
                     <div className="flex flex-row items-center gap-5">
                         <img src={vfsLogo} alt="vfs-logo" className="w-18 h-12" />
                         <h1 className = "font-semibold text-2xl">Vertical Flight Society at UCI</h1>
                     </div>
 
                     {/* Socials */}
-                    <div className="flex flex-row gap-5">
-                        <img src = {Instagram} alt="social-icon" />
-                        <img src = {Linkedin} alt="social-icon" />
-                        <img src = {Youtube} alt="social-icon" />
-                        <img src = {Twitter} alt="social-icon" />
-                        <img src = {Facebook} alt="social-icon" />
+                    <div className="flex flex-row gap-5 text-2xl">
+                        <Link to={"https://www.instagram.com/vfs_uci/"} className={"hover:text-yellow"}>
+                            <FontAwesomeIcon icon={faInstagram} />
+                        </Link>
+                        <Link to={"https://www.linkedin.com/company/the-vertical-flight-society-at-uci/"} className={"hover:text-yellow"}>
+                            <FontAwesomeIcon icon={faLinkedinIn} />
+                        </Link>
+                        <Link to={"https://discord.com/invite/ea37NfeuGb"} className={"hover:text-yellow"}>
+                            <FontAwesomeIcon icon={faDiscord} />
+                        </Link>
                     </div>
                 </div>
             </div>

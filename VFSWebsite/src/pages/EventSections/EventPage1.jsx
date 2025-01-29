@@ -4,6 +4,16 @@ import image3 from "../../assets/Events/overair.avif";
 import image4 from "../../assets/Events/jump_aero.avif";
 import image5 from "../../assets/Events/nasa_speaker.avif";
 import image6 from "../../assets/Events/puneet_singh.avif";
+import {
+    Pagination,
+    PaginationContent,
+    PaginationEllipsis,
+    PaginationItem,
+    PaginationLink,
+    PaginationNext,
+    PaginationPrevious,
+} from "@/components/ui/pagination"
+
 
 export default function Events() {
   const events = [
@@ -131,6 +141,30 @@ Overair's Butterfly aircraft.
           </div>
         </div>
       ))}
+        <Pagination>
+            <PaginationContent>
+                <PaginationItem>
+                    <PaginationPrevious href="#" />
+                </PaginationItem>
+                <PaginationItem>
+                    <PaginationLink href="#">1</PaginationLink>
+                </PaginationItem>
+                <PaginationItem>
+                    <PaginationLink href="#" isActive>
+                        2
+                    </PaginationLink>
+                </PaginationItem>
+                <PaginationItem>
+                    <PaginationLink href="#">3</PaginationLink>
+                </PaginationItem>
+                <PaginationItem>
+                    <PaginationEllipsis />
+                </PaginationItem>
+                <PaginationItem>
+                    <PaginationNext href="#" />
+                </PaginationItem>
+            </PaginationContent>
+        </Pagination>
     </div>
   );
 }

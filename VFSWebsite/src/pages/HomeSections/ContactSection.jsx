@@ -14,11 +14,6 @@ export default function ContactSection() {
             <div className="absolute inset-0 flex flex-col justify-center items-center bg-black bg-opacity-20 text-black gap-10 ">
                 <div className="w-full max-w-4xl bg-white bg-opacity-80 rounded-lg shadow-lg px-10 py-5">
                     <h1 className="text-4xl font-bold mb-4">Contact Us</h1>
-                    <div className="flex justify-between text-lg mb-8">
-                        <p>Address: 123 Street, City</p>
-                        <p>Phone: 555-555-5555</p>
-                        <p>Email: info@example.com</p>
-                    </div>
                     <form className="grid grid-cols-1 md:grid-cols-2 gap-6">
                         <div>
                             <label htmlFor="firstName" className="block text-sm font-medium text-gray-700">

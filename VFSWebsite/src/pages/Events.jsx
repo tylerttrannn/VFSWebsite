@@ -1,4 +1,4 @@
-import Event from "./EventSections/Event";
+import Event from "./EventSections/EventPage1.jsx";
 import Footer from "../components/Footer";
 
 export default function Events() {
