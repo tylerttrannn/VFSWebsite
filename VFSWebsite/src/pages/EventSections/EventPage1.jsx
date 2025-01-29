@@ -1,20 +1,9 @@
-import image1 from "../../assets/Events/carrer.avif";
-import image2 from "../../assets/Events/supernal.avif";
-import image3 from "../../assets/Events/overair.avif";
-import image4 from "../../assets/Events/jump_aero.avif";
-import image5 from "../../assets/Events/nasa_speaker.avif";
-import image6 from "../../assets/Events/puneet_singh.avif";
-import {
-    Pagination,
-    PaginationContent,
-    PaginationEllipsis,
-    PaginationItem,
-    PaginationLink,
-    PaginationNext,
-    PaginationPrevious,
-} from "@/components/ui/pagination"
-
-
+import career1 from "../../assets/Events/career_night/carrer.avif"
+import career2 from "../../assets/Events/career_night/image2.webp"
+import career3 from "../../assets/Events/career_night/image3.webp"
+import career4 from "../../assets/Events/career_night/image4.webp"
+import career5 from "../../assets/Events/career_night/image5.webp"
+import career6 from "../../assets/Events/career_night/image1.webp"
 
 import {
   Carousel,
@@ -43,7 +32,7 @@ of VFS, Angelo Collins and VFS Western Region VP, Dr. Colin
 Theodore on our campus! Students learned more about potential
 career opportunities in commercial, military, and academia.
 `,
-      images: [image1, image2, image3]
+      images: [career1, career2, career3, career4, career5, career6]
 
     },
     {
@@ -162,30 +151,7 @@ Overair's Butterfly aircraft.
           </div>
         </div>
       ))}
-        <Pagination>
-            <PaginationContent>
-                <PaginationItem>
-                    <PaginationPrevious href="#" />
-                </PaginationItem>
-                <PaginationItem>
-                    <PaginationLink href="#">1</PaginationLink>
-                </PaginationItem>
-                <PaginationItem>
-                    <PaginationLink href="#" isActive>
-                        2
-                    </PaginationLink>
-                </PaginationItem>
-                <PaginationItem>
-                    <PaginationLink href="#">3</PaginationLink>
-                </PaginationItem>
-                <PaginationItem>
-                    <PaginationEllipsis />
-                </PaginationItem>
-                <PaginationItem>
-                    <PaginationNext href="#" />
-                </PaginationItem>
-            </PaginationContent>
-        </Pagination>
+
     </div>
   );
 }
