@@ -11,29 +11,29 @@ import React from "react";
 
 export default function Footer() {
     return (
-        <div className = "px-20 pt-10">
+        <div className = "p-20">
             {/* Links Container */}
             <div>
-                <div className="flex flex-row justify-start gap-96 p-5">
+                <div className="flex flex-col gap-20 sm:gap-20 md:flex-row md:gap-40 lg:gap-48 xl:gap-96 justify-start p-5">
                     <div className="flex flex-col gap-5">
-                        <h1 className="font-bold">Contact</h1>
-                        <h1 className="font-light">Instagram</h1>
-                        <h1 className="font-light">Discord</h1>
-                        <h1 className="font-light">LinkedIn</h1>
-                        <h1 className="font-light">YouTube</h1>
+                        <h1 className="font-bold" >Contact</h1>
+                        <h1 className="font-light cursor-pointer"  onClick={() => window.location.href = 'https://www.instagram.com/vfs_uci'}>Instagram</h1>
+                        <h1 className="font-light cursor-pointer" onClick={() =>window.location.href = 'https://discord.gg/vffMUEmuYq'}>Discord</h1>
+                        <h1 className="font-light cursor-pointer"onClick={() =>window.location.href = 'https://www.linkedin.com/company/verticalflightsocietyatuci/'}>LinkedIn</h1>
+                        <h1 className="font-light cursor-pointer" onClick={() =>window.location.href = 'https://www.youtube.com/VTOLsociety'}>YouTube</h1>
                     </div>
 
                     <div className="flex flex-col gap-5">
                         <h1 className="font-bold">Resources</h1>
-                        <h1 className="font-light">VFS Page</h1>
-                        <h1 className="font-light">Student Handbook</h1>
+                        <h1 className="font-light cursor-pointer" onClick={() =>window.location.href = 'https://vtol.org'}>VFS Page</h1>
+                        <h1 className="font-light cursor-pointer">Student Handbook</h1>
                     </div>
 
                     <div className="flex flex-col gap-5">
                         <h1 className="font-bold">Join</h1>
-                        <h1 className="font-light">Contact</h1>
-                        <h1 className="font-light">Events</h1>
-                        <h1 className="font-light">About</h1>
+                        <h1 className="font-light cursor-pointer" onClick={() =>window.location.href = 'https://discord.gg/vffMUEmuYq'} >Contact</h1>
+                        <h1 className="font-light cursor-pointer" onClick={() =>window.location.href = 'https://discord.gg/vffMUEmuYq'}>Events</h1>
+                        <h1 className="font-light cursor-pointer" onClick={() =>window.location.href = 'https://discord.gg/vffMUEmuYq'}>About</h1>
                     </div>
                 </div>
 
@@ -43,23 +43,29 @@ export default function Footer() {
                 </div>
 
                 {/* Bottom Section */}
-                <div className="flex flex-row justify-between items-center py-5 px-5">
+                <div className="flex flex-row justify-between items-center pt-10 px-5">
                     <div className="flex flex-row items-center gap-5">
                         <img src={vfsLogo} alt="vfs-logo" className="w-18 h-12" />
                         <h1 className = "font-semibold text-2xl">Vertical Flight Society at UCI</h1>
                     </div>
 
-                    {/* Socials */}
-                    <div className="flex flex-row gap-5 text-2xl">
-                        <Link to={"https://www.instagram.com/vfs_uci/"} className={"hover:text-yellow"}>
-                            <FontAwesomeIcon icon={faInstagram} />
-                        </Link>
-                        <Link to={"https://www.linkedin.com/company/the-vertical-flight-society-at-uci/"} className={"hover:text-yellow"}>
-                            <FontAwesomeIcon icon={faLinkedinIn} />
-                        </Link>
-                        <Link to={"https://discord.com/invite/ea37NfeuGb"} className={"hover:text-yellow"}>
-                            <FontAwesomeIcon icon={faDiscord} />
-                        </Link>
+                    {/* Socials */} 
+                    <div className="flex flex-row gap-5">
+                        <a href="https://www.instagram.com/vfs_uci" target="_blank" rel="noopener noreferrer">
+                            <img src={Instagram} alt="Instagram" />
+                        </a>
+                        <a href="https://www.linkedin.com/company/verticalflightsocietyatuci/" target="_blank" rel="noopener noreferrer">
+                            <img src={Linkedin} alt="LinkedIn" />
+                        </a>
+                        <a href="https://www.youtube.com/VTOLsociety" target="_blank" rel="noopener noreferrer">
+                            <img src={Youtube} alt="YouTube" />
+                        </a>
+                        <a href="https://twitter.com/VTOLsociety" target="_blank" rel="noopener noreferrer">
+                            <img src={Twitter} alt="Twitter" />
+                        </a>
+                        <a href="https://www.facebook.com/VTOLsociety" target="_blank" rel="noopener noreferrer">
+                            <img src={Facebook} alt="Facebook" />
+                        </a>
                     </div>
                 </div>
             </div>

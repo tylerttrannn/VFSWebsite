@@ -15,6 +15,16 @@ import {
 } from "@/components/ui/pagination"
 
 
+
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel"
+
+
 export default function Events() {
   const events = [
     {
@@ -33,7 +43,8 @@ of VFS, Angelo Collins and VFS Western Region VP, Dr. Colin
 Theodore on our campus! Students learned more about potential
 career opportunities in commercial, military, and academia.
 `,
-      image: image1
+      images: [image1, image2, image3]
+
     },
     {
       title: "Supernal Company Tour",
@@ -44,7 +55,7 @@ location and see the SA2 prototype up close. Our tour was hosted by
 Samuel Im, a senior test evaluation certification lab engineer, who
 provided us with comprehensive insights into the prototype.
 `,
-      image: image2
+      images: [image2, image2, image3]
     },
     {
       title: "Overair Company Tour",
@@ -58,7 +69,7 @@ intersection of cutting-edge technology and transportation.
 Special thanks to Puneet Singh and Mat Garcia for hosting our group
 and sharing valuable insights into the industry and Butterfly aircraft!
 `,
-      image: image3
+    images: [image3, image2, image3]
     },
 
     {
@@ -67,7 +78,7 @@ and sharing valuable insights into the industry and Butterfly aircraft!
         description: `
 Carl is the Founder and CEO of Jump Aero where he and his team are developing a high-speed, all-electric, vertical takeoff and landing (eVTOL) aircraft to help first responders save lives. Prior to Jump Aero, Carl founded and led Terrafugia as CEO/CTO from inception in 2006 through acquisition by the Zhejiang Geely Holding Group in 2017. Carl spearheaded the development of the first integrated roadable aircraft capable of converting between flying and driving in less than 30 seconds. He established and ran a world-class R&D center for Terrafugia focused on the development of novel eVTOL configurations and business plans for the emerging Urban Air Mobility market.
   `,
-        image: image4
+    images: [image4, image2, image3]
       },
 
     {
@@ -84,7 +95,7 @@ honored to welcome the executive director of VFS, Angelo Collins and
 VFS Western Region VP, Dr. Colin Theodore on our campus! Students learned
 more about potential career opportunities in commercial, military, and academia.
 `,
-      image: image5
+    images: [image5, image2, image3]
 
     },
 
@@ -98,7 +109,7 @@ and the emerging rotorcraft industry. He also shared insights into the eVTOL
 industry and explained various key design decisions and capabilities of
 Overair's Butterfly aircraft.
 `,
-      image: image6
+    images: [image6, image2, image3]
     }
   ];
 
@@ -114,13 +125,23 @@ Overair's Butterfly aircraft.
         >
             
           {/* Image */}
-          <div className="md:w-1/2 flex items-center justify-center">
-            {event.image && (
-              <img
-                src={event.image}
-                className="max-w-[85%] rounded-lg"
-                alt={event.title}
-              />
+          <div className="md:w-1/2 flex items-center justify-center relative">
+            {event.images && event.images.length > 0 && (
+              <Carousel className="relative w-full max-w-[85%]">
+                <CarouselContent>
+                  {event.images.map((image, index) => (
+                    <CarouselItem key={index} className="flex justify-center">
+                      <img src={image} className="max-w-full rounded-lg" alt={`Slide ${index + 1}`} />
+                    </CarouselItem>
+                  ))}
+                </CarouselContent>
+
+                {/*modifying the styling of the buttons to make it more compact*/}
+                <div className="absolute inset-0 flex justify-between items-center px-4">
+                  <CarouselPrevious className="bg-gray-800/70 rounded-full p-2 hover:bg-gray-900 transition w-10 h-10 flex items-center justify-center" />
+                  <CarouselNext className="bg-gray-800/70 rounded-full p-2 hover:bg-gray-900 transition w-10 h-10 flex items-center justify-center" />
+                </div>
+              </Carousel>
             )}
           </div>
 
