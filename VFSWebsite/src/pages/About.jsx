@@ -1,4 +1,3 @@
-import React from "react";
 import vfslogo from "../assets/images/vfsatucilogo.webp";
 import TeamSection from "./HomeSections/TeamSection.jsx";
 import Footer from "../components/Footer";
