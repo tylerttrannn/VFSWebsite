@@ -10,7 +10,7 @@ export default function Footer() {
         <div className = "p-20">
             {/* Links Container */}
             <div>
-                <div className="flex flex-row justify-start gap-96 p-5">
+                <div className="flex flex-col gap-28 sm:gap-40 md:flex-row md:gap-40 lg:gap-48 xl:gap-96 justify-start p-5">
                     <div className="flex flex-col gap-5">
                         <h1 className="font-bold">Contact</h1>
                         <h1 className="font-light">Instagram</h1>
@@ -45,7 +45,7 @@ export default function Footer() {
                         <h1 className = "font-semibold text-2xl">Vertical Flight Society at UCI</h1>
                     </div>
 
-                    {/* Socials */}
+                    {/* Socials */} 
                     <div className="flex flex-row gap-5">
                         <img src = {Instagram} alt="social-icon" />
                         <img src = {Linkedin} alt="social-icon" />

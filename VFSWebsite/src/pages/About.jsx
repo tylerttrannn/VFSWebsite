@@ -9,7 +9,7 @@ export default function About() {
             {/* About Section */}
             <div className="flex flex-col items-center justify-center max-w-6xl mx-auto py-16 px-6">
                 {/* Logo */}
-                <img src={vfslogo} alt="VFS Logo" className="mb-10 w-32 h-auto" />
+                <img src={vfslogo} alt="VFS Logo" className="mb-10 w-96 h-auto" />
 
                 {/* Main Heading */}
                 <h1 className="text-4xl font-bold text-[#C30D3B] mb-8">About Us</h1>
@@ -28,7 +28,6 @@ export default function About() {
                         In November 2022, the VFS Board of Directors approved updates to the VFS Vision and Mission Statements, as well as a statement of the Goals & Supporting Initiatives underway by the Society: <strong>2022 VFS Strategic Statements.</strong>
                     </p>
                 </div>
-
 
                 {/* Mission Section */}
                 <div className="text-center mt-16">
