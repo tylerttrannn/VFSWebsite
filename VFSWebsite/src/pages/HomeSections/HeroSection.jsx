@@ -4,7 +4,7 @@ import CustomLogo from "../../components/CustomLogo.jsx";
 
 export default function HeroSection(){
     return (
-        <div className="relative w-screen h-[26rem]">
+        <div className="relative h-[26rem]">
             <img
                 src={HeroImage}
                 alt="Spring Career Dev Night Image"

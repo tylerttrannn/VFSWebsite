@@ -1,7 +1,8 @@
 import React from "react";
 import ProjectCard from "../../components/ProjectCard.jsx";
 import {Link} from "react-router";
-import Helicopter from "../../assets/images/helicopter.jpg"
+import DBVF from "../../assets/Projects/dbvf_comp/image4.png"
+import SDC from "../../assets/Projects/SDC.jpg"
 import {
     Carousel,
     CarouselContent,
@@ -14,15 +15,22 @@ export default function ProjectSection() {
     const projects = [
         {
             id:1,
-            image:Helicopter,
-            header:"Student Design Competition (SDC)",
-            description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
+            image:DBVF,
+            header:"Design-Build-Vertical Fly (DBVF)",
+            description:"The DBVF (Design-Build-Vertical Flight) competition is an eVTOL (electric-powered remote-control vertical take-off and landing) vehicle competition where university students have the opportunity to gain hands-on experience and familiarize themselves with eVTOL and AAM (advanced air mobility). \n" +
+
+                "Student teams annually design, build, and test an eVTOL aircraft to meet specific objectives and attend a flyoff in Maryland, where they are scored on their ability to meet those objectives. \n" +
+
+                "UCI’s DBVF team AeroZot currently consists of 19 members who are split into subteams to develop the airframe, hardware, software, and the financing of the eVTOL.\n",
         },
         {
-            id:1,
-            image:Helicopter,
-            header:"Design-Build-Vertical Fly (DBVF)",
-            description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
+            id:2,
+            image:SDC,
+            header:"Student Design Competition (SDC)",
+            description:
+                "The Vertical Flight Society (VFS) Student Design Competition (SDC) is an annual aircraft design competition that challenges students to innovate and engineer cutting-edge vertical lift solutions. As the VFS at UCI Chapter, we proudly sponsor a team of undergraduate students to compete in this competition, providing them with the opportunity to apply their aerospace engineering knowledge to real-world design problems. \n" +
+                "Winning teams are awarded a cash stipend, as well as an invitation to present their designs at the Vertical Flight Society’s largest Annual Forum and Technology Display. The competition aims to encourage education and careers in vertical flight with rotating sponsorship between Airbus, The Boeing Company, Bell, Leonardo Helicopters, Sikorsky, a Lockheed Martin Co.; and US Army Research Lab. \n"
+
         },
     ]
     return (

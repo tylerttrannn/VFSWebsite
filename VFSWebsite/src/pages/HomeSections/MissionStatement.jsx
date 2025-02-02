@@ -3,7 +3,7 @@ import VFSSymbol from "../../assets/images/vfs-symbol-small3.webp"
 
 export default function MissionStatement() {
     return (
-        <div className="relative w-screen h-[11rem]">
+        <div className="relative h-[11rem]">
             {/* Background Gradient */}
             <div className="absolute inset-0 bg-gradient-to-r from-[#6F0B27] from-10% to-red "></div>
 

@@ -4,7 +4,7 @@ import Plane from "../../assets/images/plane.jpg";
 export default function ContactSection() {
 
     return (
-        <div className="relative w-screen h-[40rem]">
+        <div className="relative h-[40rem]">
             <img
                 src={Plane}
                 alt="Plane in clouds"
@@ -23,7 +23,7 @@ export default function ContactSection() {
                                 id="firstName"
                                 type="text"
                                 placeholder="Enter your first name"
-                                className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-red-500 focus:ring-red-500 p-1 border border-[#B0B0B0]"
+                                className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-red-500 focus:ring-red-500 p-1 pl-2 border border-[#B0B0B0]"
                             />
                         </div>
                         <div>
@@ -34,7 +34,7 @@ export default function ContactSection() {
                                 id="lastName"
                                 type="text"
                                 placeholder="Enter your last name"
-                                className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-red-500 focus:ring-red-500 p-1 border border-[#B0B0B0]"
+                                className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-red-500 focus:ring-red-500 p-1 pl-2 border border-[#B0B0B0]"
                             />
                         </div>
                         <div>
@@ -45,7 +45,7 @@ export default function ContactSection() {
                                 id="email"
                                 type="email"
                                 placeholder="Enter your email"
-                                className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-red-500 focus:ring-red-500 p-1 border border-[#B0B0B0]"
+                                className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-red-500 focus:ring-red-500 p-1 pl-2 border border-[#B0B0B0]"
                             />
                         </div>
                         <div>
@@ -56,7 +56,7 @@ export default function ContactSection() {
                                 id="phone"
                                 type="text"
                                 placeholder="Enter your phone number"
-                                className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-red-500 focus:ring-red-500 p-1 border border-[#B0B0B0]"
+                                className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-red-500 focus:ring-red-500 p-1 pl-2 border border-[#B0B0B0]"
                             />
                         </div>
                         <div className="col-span-1 md:col-span-2">
@@ -67,7 +67,7 @@ export default function ContactSection() {
                                 id="message"
                                 rows="5"
                                 placeholder="Type your message here"
-                                className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-red-500 focus:ring-red-500 p-1 border border-[#B0B0B0]"
+                                className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-red-500 focus:ring-red-500 p-1 pl-2 border border-[#B0B0B0]"
                             />
                         </div>
                         <div className="col-span-1 md:col-span-2 flex justify-end">

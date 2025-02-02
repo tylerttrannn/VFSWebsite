@@ -1,6 +1,4 @@
 import Event from "./EventSections/EventPage1.jsx";
-import Footer from "../components/Footer";
-  
 
 export default function Events() {
     return (
@@ -13,7 +11,6 @@ export default function Events() {
                 </div>
             </div>
 
-            <Footer/>
 
         </div>
 

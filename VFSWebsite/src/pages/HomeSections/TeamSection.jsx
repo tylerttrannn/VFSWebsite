@@ -70,14 +70,15 @@ export default function TeamSection() {
     ];
 
     return (
-        <div className="relative w-screen h-[32rem]">
+        <div className="relative h-[32rem]">
             <img
                 src={Plane}
                 alt="Plane in clouds"
                 className="w-screen h-[32rem] object-cover"
             />
             {/* Text Overlay */}
-            <div className="absolute inset-0 flex flex-col justify-center items-center bg-black bg-opacity-50 text-black gap-10">
+            <div
+                className="absolute inset-0 flex flex-col justify-center items-center bg-black bg-opacity-50 text-black gap-10">
                 <h1 className="text-2xl md:text-4xl font-bold text-white">Meet the Team</h1>
                 <Carousel
                     opts={{

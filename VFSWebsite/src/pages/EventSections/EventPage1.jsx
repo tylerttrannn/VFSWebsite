@@ -41,11 +41,9 @@ import {
 import {
     Pagination,
     PaginationContent,
-    PaginationEllipsis,
     PaginationItem,
     PaginationLink,
     PaginationNext,
-    PaginationPrevious,
 } from "@/components/ui/pagination"
 
 
@@ -97,7 +95,7 @@ career opportunities in commercial, military, and academia.
   ];
 
   return (
-      <div className="space-y-2 max-w-7xl mx-auto">
+      <div className="space-y-2 max-w-7xl mx-auto pb-10">
           <h1 className="text-6xl font-extrabold pl-16 my-10">Past Events</h1>
           {events.map((event, index) => (
               <div

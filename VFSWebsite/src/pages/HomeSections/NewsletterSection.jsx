@@ -7,7 +7,7 @@ export default function NewsletterSection() {
         e.preventDefault();
     }
     return (
-        <div className={" w-screen bg-red text-white flex flex-col items-center justify-center pb-16 gap-3"}>
+        <div className={"bg-red text-white flex flex-col items-center justify-center pb-16 gap-3"}>
             <img src={Logo} alt={"newsletter logo"} className={"w-36"} />
             <div className={"flex flex-col gap-3 items-center justify-center"}>
                 <h1 className={"text-2xl font-semibold"}>Love Vertical Flight Society?</h1>

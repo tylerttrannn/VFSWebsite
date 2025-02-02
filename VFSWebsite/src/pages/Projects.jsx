@@ -1,5 +1,4 @@
-import Footer from "../components/Footer";
-import ProjectPage1 from "./ProjectSection/projectPage1.jsx";
+import ProjectPage1 from "./ProjectSections/projectPage1.jsx";
 
 
 
