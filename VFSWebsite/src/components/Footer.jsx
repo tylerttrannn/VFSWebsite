@@ -11,7 +11,7 @@ import React from "react";
 
 export default function Footer() {
     return (
-        <div className = "p-20">
+        <div className = "pb-10 ">
             {/* Links Container */}
             <div>
                 <div className="flex flex-col gap-20 sm:gap-20 md:flex-row md:gap-40 lg:gap-48 xl:gap-96 justify-start p-5">
@@ -50,7 +50,7 @@ export default function Footer() {
                     </div>
 
                     {/* Socials */} 
-                    <div className="flex flex-row gap-5">
+                    <div className="hidden sm:flex flex-row gap-5">
                         <a href="https://www.instagram.com/vfs_uci" target="_blank" rel="noopener noreferrer">
                             <img src={Instagram} alt="Instagram" />
                         </a>

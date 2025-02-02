@@ -25,7 +25,15 @@ const events = [
     `,
     images: [dbvf_1, dbvf_2, dbvf_3, dbvf_4], 
   },
+  {
+    title: "Student Design Competition (SDC)",
+    description: `
+The Vertical Flight Society's Student Design Competition is an annual challenge that invites university students worldwide to design an innovative vertical lift aircraft based on specified requirements. This competition provides engineering students with a hands-on opportunity to apply their skills, gain industry recognition, and explore careers in vertical flight technology.
+Winning teams receive cash stipends and an invitation to present their designs at the Vertical Flight Society’s Annual Forum & Technology Display, the leading technical event in the vertical flight industry. The competition is sponsored by major aerospace companies, including Airbus, Boeing, Bell, Leonardo Helicopters, Sikorsky (Lockheed Martin), and the U.S. Army Research Lab, ensuring students engage with top industry leaders.
 
+    `,
+    images: [dbvf_1, dbvf_2, dbvf_3, dbvf_4], 
+  },
 ];
 
 export default function ProjectPage() {
