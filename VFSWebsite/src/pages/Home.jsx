@@ -18,7 +18,6 @@ export default function Home(){
             <Divider/>
             <NewsletterSection/>
             <ContactSection/>
-            <Footer/>
         </div>
     )
 }

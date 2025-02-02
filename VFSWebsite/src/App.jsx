@@ -6,6 +6,10 @@ import About from "./pages/About.jsx";
 import Projects from "./pages/Projects.jsx";
 import News from "./pages/News.jsx";
 import Events from "./pages/Events.jsx";
+import Events1 from "./pages/EventSections/EventPage1.jsx";
+import Events2 from "./pages/EventSections/EventPage2.jsx";
+import Events3 from "./pages/EventSections/EventPage3.jsx";
+import Footer from "./components/Footer.jsx";
 
 function App() {
   return (
@@ -17,7 +21,11 @@ function App() {
               <Route path={'/news'} element={<News/>}/>
               <Route path={'/events'} element={<Events/>}/>
               <Route path={'/projects'} element={<Projects/>}/>
+              <Route path={'/events/1'} element={<Events1/>}/>
+              <Route path={'/events/2'} element={<Events2/>}/>
+              <Route path={'/events/3'} element={<Events3/>}/>
           </Routes>
+          <Footer/>
       </div>
   )
 }

@@ -44,8 +44,6 @@ export default function About() {
             {/* Team Section */}
             <TeamSection />
 
-            {/* Footer */}
-            <Footer />
         </div>
     );
 }

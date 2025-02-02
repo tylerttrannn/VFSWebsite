@@ -8,7 +8,6 @@ export default function Projects(){
         <div>
             <h1 className = "text-center text-6xl font-bold mt-20">Past Projects </h1>
             <ProjectPage1/>
-            <Footer/>
         </div>
     )
 }
