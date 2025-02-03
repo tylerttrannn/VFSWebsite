@@ -103,7 +103,7 @@ Overair's Butterfly aircraft.
     ];
 
     return (
-        <div className="space-y-2 max-w-7xl mx-auto">
+        <div className="space-y-2 max-w-7xl mx-auto pb-10">
             <h1 className="text-6xl font-extrabold pl-16 my-10">Past Events</h1>
             {events.map((event, index) => (
                 <div
