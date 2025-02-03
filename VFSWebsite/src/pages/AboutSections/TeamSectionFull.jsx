@@ -50,7 +50,7 @@ export default function TeamSectionFull(){
     ];
 
     return (
-        <div className ="flex flex-col justify-center items-center w-full space-y-10 ">
+        <div className ="flex flex-col justify-center items-center w-full space-y-10 sm:p-16 md:p-16 lg:p-32 2xl:p-64">
             <h1 className = "text-4xl font-bold text-[#C30D3B]">Meet the Team</h1>
 
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 w-full p-4">
