@@ -25,7 +25,17 @@ const events = [
     `,
     images: [dbvf_1, dbvf_2, dbvf_3, dbvf_4], 
   },
+  {
+    title: "Student Design Competition (SDC)",
+    description: `
+The Vertical Flight Society (VFS) Student Design Competition (SDC) is an annual aircraft design competition that challenges students to innovate and engineer cutting-edge vertical lift solutions. As the VFS at UCI Chapter, we proudly sponsor a team of undergraduate students to compete in this competition, providing them with the opportunity to apply their aerospace engineering knowledge to real-world design problems. 
 
+Winning teams are awarded a cash stipend, as well as an invitation to present their designs at the Vertical Flight Society’s largest Annual Forum and Technology Display. The competition aims to encourage education and careers in vertical flight with rotating sponsorship between Airbus, The Boeing Company, Bell, Leonardo Helicopters, Sikorsky, a Lockheed Martin Co.; and US Army Research Lab. More information about the comeptition can be found below: 
+https://vtol.org/awards-and-contests/student-design-competition 
+
+    `,
+    images: [dbvf_1, dbvf_2, dbvf_3, dbvf_4], 
+  },
 ];
 
 export default function ProjectPage() {

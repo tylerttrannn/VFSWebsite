@@ -87,6 +87,7 @@ export default function TeamSection() {
 
     return (
         <div className="relative h-[32rem]">
+        <div className="relative w-full min-h-[20rem] md:h-[32rem]">
             <img
                 src={Plane}
                 alt="Plane in clouds"
@@ -97,16 +98,14 @@ export default function TeamSection() {
                 className="absolute inset-0 flex flex-col justify-center items-center bg-black bg-opacity-50 text-black gap-10">
                 <h1 className="text-2xl md:text-4xl font-bold text-white">Meet the Team</h1>
                 <Carousel
-                    opts={{
-                        align: "start",
-                    }}
+                    opts={{ align: "start" }}
                     className="w-full max-w-5xl"
                 >
                     <CarouselContent className="flex gap-4">
                         {members.map((member) => (
                             <CarouselItem
                                 key={member.id}
-                                className="basis-1/4 flex-shrink-0 px-2"
+                                className="basis-3/4 sm:basis-1/2 md:basis-1/3 lg:basis-1/4 flex-shrink-0 px-2"
                             >
                                 <TeamCard member={member} />
                             </CarouselItem>

@@ -34,10 +34,11 @@ export default function ProjectSection() {
         },
     ]
     return (
-        <div className="flex items-center justify-center">
-            <div className={"my-10 flex flex-col"}>
-                <h1 className="text-4xl font-bold">PROJECTS</h1>
-                <Carousel opts={{align: "center"}} className="w-full max-w-6xl relative ">
+        <div className="flex items-center justify-center px-4">
+            <div className="my-6 sm:my-10 flex flex-col w-full max-w-6xl text-center">
+                <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold">PROJECTS</h1>
+
+                <Carousel opts={{ align: "center" }} className="w-full relative mt-6">
                     <CarouselContent className="flex gap-4">
                         {projects.map((project) => (
                             <CarouselItem key={project.id} className="w-full">
@@ -51,7 +52,7 @@ export default function ProjectSection() {
                 <div className="flex justify-center mt-5">
                     <Link
                         to="/projects"
-                        className="text-white text-md bg-red p-3 px-6 rounded-lg font-normal hover:bg-[#950F35]"
+                        className="text-white text-sm sm:text-md bg-red p-2 px-4 sm:p-3 sm:px-6 rounded-lg font-normal hover:bg-[#950F35]"
                     >
                         View All Projects
                     </Link>
