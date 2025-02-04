@@ -1,8 +1,24 @@
 import React from "react";
 import Plane from "../../assets/images/plane.jpg";
+import emailjs from 'emailjs-com';
+
+const SERVICE_ID = "service_fq0i2aa";
+const TEMPLATE_ID = "template_17hi35r";
+const PUBLIC_KEY = "DXW_640i7txCjk62K";
 
 export default function ContactSection() {
-
+    const handleOnSubmit = (e) => {
+        e.preventDefault();
+        emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, e.target, PUBLIC_KEY)
+            .then((result) => {
+                console.log(result.text);
+                alert('Message Sent Successfully')
+            }, (error) => {
+                console.log(error.text);
+                alert('Something went wrong!')
+            });
+        e.target.reset()
+    };
     return (
         <div className="relative h-[40rem]">
             <img
@@ -14,27 +30,25 @@ export default function ContactSection() {
             <div className="absolute inset-0 flex flex-col justify-center items-center bg-black bg-opacity-20 text-black gap-10 ">
                 <div className="w-full max-w-4xl bg-white bg-opacity-80 rounded-lg shadow-lg px-10 py-5">
                     <h1 className="text-4xl font-bold mb-4">Contact Us</h1>
-                    <form className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <form className="grid grid-cols-1 md:grid-cols-2 gap-6" onSubmit={handleOnSubmit}>
                         <div>
-                            <label htmlFor="firstName" className="block text-sm font-medium text-gray-700">
-                                First Name
-                            </label>
+                            <label htmlFor="from_firstname" className="block text-sm font-medium text-gray-700">First Name</label>
                             <input
-                                id="firstName"
-                                type="text"
+                                type="text" id="from_firstname" name="from_firstname"
                                 placeholder="Enter your first name"
                                 className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-red-500 focus:ring-red-500 p-1 pl-2 border border-[#B0B0B0]"
+                                required
                             />
                         </div>
                         <div>
-                            <label htmlFor="lastName" className="block text-sm font-medium text-gray-700">
+                            <label htmlFor="from_lastname" className="block text-sm font-medium text-gray-700">
                                 Last Name
                             </label>
                             <input
-                                id="lastName"
-                                type="text"
+                                type="text" id="from_lastname" name="from_lastname"
                                 placeholder="Enter your last name"
                                 className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-red-500 focus:ring-red-500 p-1 pl-2 border border-[#B0B0B0]"
+                                required
                             />
                         </div>
                         <div>
@@ -42,10 +56,10 @@ export default function ContactSection() {
                                 Email
                             </label>
                             <input
-                                id="email"
-                                type="email"
+                                type="email" id="from_email" name="from_email"
                                 placeholder="Enter your email"
                                 className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-red-500 focus:ring-red-500 p-1 pl-2 border border-[#B0B0B0]"
+                                required
                             />
                         </div>
                         <div>
@@ -65,9 +79,11 @@ export default function ContactSection() {
                             </label>
                             <textarea
                                 id="message"
+                                name="message"
                                 rows="5"
                                 placeholder="Type your message here"
                                 className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-red-500 focus:ring-red-500 p-1 pl-2 border border-[#B0B0B0]"
+                                required
                             />
                         </div>
                         <div className="col-span-1 md:col-span-2 flex justify-end">

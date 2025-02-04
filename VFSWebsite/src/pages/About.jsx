@@ -1,6 +1,4 @@
 import vfslogo from "../assets/images/vfsatucilogo.webp";
-import TeamSection from "./HomeSections/TeamSection.jsx";
-import Footer from "../components/Footer";
 import TeamSectionFull from "./AboutSections/TeamSectionFull.jsx";
 
 export default function About() {
@@ -24,9 +22,6 @@ export default function About() {
                         According to the Society Bylaws, the purpose of the Society is to "advance the theory and practices of the science of vertical flight aircraft."
                     </p>
                     <br />
-                    <p>
-                        In November 2022, the VFS Board of Directors approved updates to the VFS Vision and Mission Statements, as well as a statement of the Goals & Supporting Initiatives underway by the Society: <strong>2022 VFS Strategic Statements.</strong>
-                    </p>
                 </div>
 
                 {/* Mission Section */}
