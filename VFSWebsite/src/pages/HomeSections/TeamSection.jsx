@@ -84,37 +84,36 @@ export default function TeamSection() {
                 "https://media.licdn.com/dms/image/v2/D5603AQGUHAG0M-0afQ/profile-displayphoto-shrink_400_400/B56ZQ8rlpdHIAo-/0/1736184857129?e=1744243200&v=beta&t=R_97Cz9i45M4vmQEOC7XY_886pb3ejYQN81G5XX9WdU",
         },
     ];
-
     return (
         <div className="relative h-[32rem]">
-        <div className="relative w-full min-h-[20rem] md:h-[32rem]">
-            <img
-                src={Plane}
-                alt="Plane in clouds"
-                className="w-screen h-[32rem] object-cover"
-            />
-            {/* Text Overlay */}
-            <div
-                className="absolute inset-0 flex flex-col justify-center items-center bg-black bg-opacity-50 text-black gap-10">
-                <h1 className="text-2xl md:text-4xl font-bold text-white">Meet the Team</h1>
-                <Carousel
-                    opts={{ align: "start" }}
-                    className="w-full max-w-5xl"
-                >
-                    <CarouselContent className="flex gap-4">
-                        {members.map((member) => (
-                            <CarouselItem
-                                key={member.id}
-                                className="basis-3/4 sm:basis-1/2 md:basis-1/3 lg:basis-1/4 flex-shrink-0 px-2"
-                            >
-                                <TeamCard member={member} />
-                            </CarouselItem>
-                        ))}
-                    </CarouselContent>
-                    <CarouselPrevious />
-                    <CarouselNext />
-                </Carousel>
+            <div className="relative w-full min-h-[20rem] md:h-[32rem]">
+                <img
+                    src={Plane}
+                    alt="Plane in clouds"
+                    className="w-screen h-[32rem] object-cover"
+                />
+                {/* Text Overlay */}
+                <div
+                    className="absolute inset-0 flex flex-col justify-center items-center bg-black bg-opacity-50 text-black gap-10">
+                    <h1 className="text-2xl md:text-4xl font-bold text-white">Meet the Team</h1>
+                    <Carousel
+                        opts={{align: "start"}}
+                        className="w-full max-w-5xl">
+                        <CarouselContent className="flex gap-4">
+                            {members.map((member) => (
+                                <CarouselItem
+                                    key={member.id}
+                                    className="basis-3/4 sm:basis-1/2 md:basis-1/3 lg:basis-1/4 flex-shrink-0 px-2"
+                                >
+                                    <TeamCard member={member}/>
+                                </CarouselItem>
+                            ))}
+                        </CarouselContent>
+                        <CarouselPrevious/>
+                        <CarouselNext/>
+                    </Carousel>
+                </div>
             </div>
         </div>
-    );
+    )
 }
