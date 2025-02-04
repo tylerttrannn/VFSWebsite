@@ -65,7 +65,7 @@ export default function TeamSection() {
             position: "Treasury Intern",
             major: "Mechanical Engineering",
             picture:
-                "https://media.discordapp.net/attachments/1331367915034906796/1335015923593248788/PXL_20240701_2134261062.jpg?ex=67a144f7&is=679ff377&hm=c90742b6fb97a0fff0ad8f42bb13e441c327474fe55854a7cec0768da08aadc9&=&format=webp&width=612&height=648",
+                "https://media.discordapp.net/attachments/1331367915034906796/1335015923593248788/PXL_20240701_2134261062.jpg?ex=67a33f37&is=67a1edb7&hm=006ecfb2fbad4be5dd34296bc5ae41c883ce930ad2c0356f2b450b068f9463a6&=&format=webp&width=612&height=648",
         },
         {
             id: 9,

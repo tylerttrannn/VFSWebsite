@@ -6,7 +6,7 @@ export default function TeamSectionFull(){
         {
             id: 1,
             name: "Lucas Park",
-            position: "President",
+            position: "President & Founder",
             major: "Aerospace Engineering",
             picture:
                 "https://static.wixstatic.com/media/66ee95_456fd8416d25472f9b60b8ccb56aef74~mv2.jpeg/v1/fill/w_336,h_404,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/d.jpeg",
@@ -21,15 +21,6 @@ export default function TeamSectionFull(){
         },
         {
             id: 3,
-            name: "Nishali Desai",
-            position: "Corporate Outreach",
-            major: "Aerospace Engineering",
-            picture:
-                "https://static.wixstatic.com/media/66ee95_dbca097b259a41d69efcf52098328310~mv2.png/v1/fill/w_336,h_404,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Screenshot%202024-06-12%20at%2020_32_48.png",
-        },
-
-        {
-            id: 4,
             name: "Addison Rushing",
             position: "Treasurer",
             major: "Mechanical Engineering",
@@ -37,16 +28,53 @@ export default function TeamSectionFull(){
                 "https://static.wixstatic.com/media/66ee95_8ee3f992aed44717b6650de99470733e~mv2.png/v1/fill/w_336,h_404,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Screenshot%202024-06-12%20at%2020_37_21.png",
         },
         {
-            id: 5,
+            id: 4,
             name: "Zeeshaan Adamjee",
             position: "Public Relations",
             major: "Mechanical Engineering",
             picture:
-            "https://static.wixstatic.com/media/66ee95_e80068a4603641abbf829a3a420b0e34~mv2.png/v1/fill/w_336,h_404,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Screenshot%202024-06-12%20at%2020_39_10.png",
+                "https://static.wixstatic.com/media/66ee95_e80068a4603641abbf829a3a420b0e34~mv2.png/v1/fill/w_336,h_404,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Screenshot%202024-06-12%20at%2020_39_10.png",
         },
-
-
-
+        {
+            id: 6,
+            name: "Nishali Desai",
+            position: "Corporate Outreach",
+            major: "Aerospace Engineering",
+            picture:
+                "https://static.wixstatic.com/media/66ee95_dbca097b259a41d69efcf52098328310~mv2.png/v1/fill/w_336,h_404,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Screenshot%202024-06-12%20at%2020_32_48.png",
+        },
+        {
+            id: 7,
+            name: "Matthew Rea",
+            position: "Membership Chair",
+            major: "Aerospace Engineering",
+            picture:
+                "https://media.licdn.com/dms/image/v2/D4D03AQFz3Mfr3SiGZw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1685237387750?e=1744243200&v=beta&t=urThhkso9NoSbrh9zaPsB_30t0er1CtfHzwyZDpU4C8",
+        },
+        {
+            id: 8,
+            name: "Brycen Santos",
+            position: "Treasury Intern",
+            major: "Mechanical Engineering",
+            picture:
+                "https://media.discordapp.net/attachments/1331367915034906796/1335015923593248788/PXL_20240701_2134261062.jpg?ex=67a33f37&is=67a1edb7&hm=006ecfb2fbad4be5dd34296bc5ae41c883ce930ad2c0356f2b450b068f9463a6&=&format=webp&width=612&height=648",
+        },
+        {
+            id: 9,
+            name: "Sarghi Kamboj",
+            position: "PR Intern",
+            major: "Aerospace Engineering",
+            picture:
+                "https://media.discordapp.net/attachments/1331367915034906796/1335015923593248788/PXL_20240701_2134261062.jpg?ex=67a144f7&is=679ff377&hm=c90742b6fb97a0fff0ad8f42bb13e441c327474fe55854a7cec0768da08aadc9&=&format=webp&width=612&height=648",
+        },
+        {
+            id: 8,
+            name: "Nicole Nardi",
+            position: "VP Intern",
+            major: "Aerospace Engineering",
+            picture:
+                "https://media.licdn.com/dms/image/v2/D5603AQGUHAG0M-0afQ/profile-displayphoto-shrink_400_400/B56ZQ8rlpdHIAo-/0/1736184857129?e=1744243200&v=beta&t=R_97Cz9i45M4vmQEOC7XY_886pb3ejYQN81G5XX9WdU",
+        },
     ];
 
     return (
