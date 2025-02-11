@@ -73,7 +73,7 @@ export default function TeamSection() {
             position: "PR Intern",
             major: "Aerospace Engineering",
             picture:
-                "https://media.discordapp.net/attachments/1331367915034906796/1335015923593248788/PXL_20240701_2134261062.jpg?ex=67a144f7&is=679ff377&hm=c90742b6fb97a0fff0ad8f42bb13e441c327474fe55854a7cec0768da08aadc9&=&format=webp&width=612&height=648",
+                "https://media.discordapp.net/attachments/1336604810631450624/1336605870338998303/IMG_7960.jpg?ex=67acfc78&is=67abaaf8&hm=b6604818e3f87bd4d2caca9feb6b97035897c3fc10fa35e341953f1091224954&=&format=webp&width=541&height=650",
         },
         {
             id: 8,
