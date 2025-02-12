@@ -38,10 +38,10 @@ export default function Footer() {
                 </div>
 
                 {/* Bottom Section */}
-                <div className="flex flex-row justify-between items-center pt-5 px-5">
-                    <div className="flex flex-row items-center gap-5">
+                <div className="flex flex-col sm:flex-row justify-between items-center pt-5 px-5">
+                    <div className="flex flex-row items-center gap-5 pb-5 sm:pb-0">
                         <img src={vfsLogo} alt="vfs-logo" className="w-18 h-12" />
-                        <h1 className = "font-semibold text-2xl">Vertical Flight Society at UCI</h1>
+                        <h1 className = "font-semibold text-sm sm:text-2xl ">Vertical Flight Society at UCI</h1>
                     </div>
 
                     {/* Socials */} 
