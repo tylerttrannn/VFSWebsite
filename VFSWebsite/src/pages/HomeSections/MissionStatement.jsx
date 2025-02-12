@@ -11,7 +11,8 @@ export default function MissionStatement() {
       
 
             {/* Text Overlay  pad that to the top */}
-            <div className="absolute inset-0 flex flex-col justify-center items-center text-white px-6 gap-6 z-20">
+            <div className="absolute inset-0 flex flex-col justify-center items-center text-white px-6 gap-6 z-20 max-w-5xl mx-auto">
+
                 <p className="text-xs md:text-lg md:mx-10 text-center font-light">
                 Our mission is to provide undergraduate students with meaningful professional development opportunities in vertical flight technology through events, workshops, and competition experience.
                 </p>
