@@ -9,8 +9,7 @@ export default function MissionStatement() {
 
             {/* Image */}
       
-
-            {/* Text Overlay  pad that to the top */}
+            {/* Text Overlay*/}
             <div className="absolute inset-0 flex flex-col justify-center items-center text-white px-6 gap-6 z-20 max-w-5xl mx-auto">
 
                 <p className="text-xs md:text-lg md:mx-10 text-center font-light">

@@ -6,7 +6,7 @@ import React from "react";
 
 export default function Footer() {
     return (
-        <div className = "px-20 py-5 bg-grey text-white">
+        <div className = "px-5 sm:px-10 md:px-20 py-5 bg-grey text-white">
             {/* Links Container */}
             <div>
                 <div className="flex flex-col gap-20 sm:gap-20 md:flex-row md:gap-40 lg:gap-48 xl:gap-96 justify-start p-5">
