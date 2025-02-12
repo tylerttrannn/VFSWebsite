@@ -52,8 +52,8 @@ export default function ProjectSection() {
                 <div className="flex justify-center mt-5">
                     <Link
                         to="/projects"
-                        className="text-white text-sm sm:text-md bg-red p-2 px-4 sm:p-3 sm:px-6 rounded-lg font-normal hover:bg-[#950F35]"
-                    >
+                        className="hidden md:block text-white text-sm md:text-md bg-red p-2 px-4 md:p-3 md:px-6 rounded-lg font-normal hover:bg-[#950F35]"
+                        >
                         View All Projects
                     </Link>
                 </div>
