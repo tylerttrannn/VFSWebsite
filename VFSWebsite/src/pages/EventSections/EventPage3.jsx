@@ -22,13 +22,10 @@ import {
 export default function Events1() {
     const events = [
         {
-            title: "Supernal Company Tour",
-            date: "April 2024",
+            title: "Kick-off Event ",
+            date: "May 2023",
             description: `
-VFS at UCI had the exciting opportunity to visit Supernal’s Waterworks
-location and see the SA2 prototype up close. Our tour was hosted by
-Samuel Im, a senior test evaluation certification lab engineer, who
-provided us with comprehensive insights into the prototype.
+The Kick-off Event celebrated the launch of the Vertical Flight Society (VFS) at UCI. It served as an introduction to the organization’s mission, bringing together students interested in vertical flight technology and aerospace innovation. This event provided an opportunity for members to connect, learn about upcoming projects, and get involved in shaping the future of VFS at UCI.
 `,
             images: [kickoff1, kickoff]
         },

@@ -38,26 +38,13 @@ export default function Events1() {
     {
       title: "Supernal Company Tour",
       date: "April 2024",
-      description: `
-VFS at UCI had the exciting opportunity to visit Supernal’s Waterworks
-location and see the SA2 prototype up close. Our tour was hosted by
-Samuel Im, a senior test evaluation certification lab engineer, who
-provided us with comprehensive insights into the prototype.
-`,
+      description: ``,
       images: [supernal]
     },
     {
       title: "Overair Company Tour",
       date: "January 2024",
-      description: `
-UC Irvine students got an inside look at Overair, a local company
-shaping the future of urban air mobility! VFS at UCI collaborated
-with AIAA at UCI for this event and got to explore firsthand the
-intersection of cutting-edge technology and transportation.
-
-Special thanks to Puneet Singh and Mat Garcia for hosting our group
-and sharing valuable insights into the industry and Butterfly aircraft!
-`,
+      description: ``,
     images: [overair_img]
     },
 
@@ -65,39 +52,27 @@ and sharing valuable insights into the industry and Butterfly aircraft!
         title: "Jump Aero Speaker Event: Dr. Carl Dietrich",
         date: "January 2024",
         description: `
-Carl is the Founder and CEO of Jump Aero where he and his team are developing a high-speed, all-electric, vertical takeoff and landing (eVTOL) aircraft to help first responders save lives. Prior to Jump Aero, Carl founded and led Terrafugia as CEO/CTO from inception in 2006 through acquisition by the Zhejiang Geely Holding Group in 2017. Carl spearheaded the development of the first integrated roadable aircraft capable of converting between flying and driving in less than 30 seconds. He established and ran a world-class R&D center for Terrafugia focused on the development of novel eVTOL configurations and business plans for the emerging Urban Air Mobility market.
+Dr. Carl Dietrich, Founder and CEO of Jump Aero, joined us for an insightful speaker event where he shared his journey in aviation entrepreneurship, from founding Terrafugia to developing high-speed eVTOL aircraft for first responders at Jump Aero. Dr. Dietrich provided valuable perspectives on the future of Urban Air Mobility and the challenges of bringing innovative aircraft to market. 
   `,
     images: [dietrich_flyer, dietrich_img]
       },
 
     {
-      title: "NASA Speaker Event: Dr. Jason Cornelius",
+      title: "NASA Project Dragonfly - October 2023",
       date: "October 2023",
       description: `
-VFS at UCI hosted an Aerospace Career Development Night, featuring a
-distinguished panel of executives and leaders from the local industry:
-Axel Radermacher (Co-Founder, Head of Product at Odys Aviation), Jason
-Holmstedt (Sr. Director, Technology and Innovation at Intellisense),
-Jim Orbon (Sr. Program Manager, Anduril), and Professor Jacqueline
-Huynh (Assistant Professor, MAE Department UCI). In addition, we were
-honored to welcome the executive director of VFS, Angelo Collins and
-VFS Western Region VP, Dr. Colin Theodore on our campus! Students learned
-more about potential career opportunities in commercial, military, and academia.
+Dr. Jason Cornelius, a researcher supporting NASA’s Dragonfly mission, joined us for a discussion on the upcoming rotorcraft exploration of Titan, Saturn’s largest moon. He shared insights into the mission’s goals, including the search for prebiotic chemistry and potential signs of life, as well as his experiences in vertical lift research and aerospace engineering.
+
 `,
     images: [nasa_flyer, nasa_img1, nasa_img2],
 
     },
 
     {
-      title: "Overair Speaker Event: Dr. Puneet Singh",
+      title: "Rotorcraft & eVTOL Technology",
       date: "May 2023",
       description: `
-VFS at UCI had the honor of hosting Dr. Puneet Singh for our inaugural
-speaker event. Dr. Singh gave an inspiring talk about his impressive career
-and the emerging rotorcraft industry. He also shared insights into the eVTOL
-industry and explained various key design decisions and capabilities of
-Overair's Butterfly aircraft.
-`,
+Dr. Puneet Singh, Staff Engineer at Overair, joined us for an engaging discussion on the development of the Butterfly eVTOL aircraft and the future of Urban Air Mobility. He shared insights into rotorcraft aeromechanics, flight dynamics, and control laws, providing students with a deeper understanding of the challenges and innovations shaping next-generation electric vertical flight. `,
     images: [speaker, speaker1, speaker2, speaker3]
     }
     ];

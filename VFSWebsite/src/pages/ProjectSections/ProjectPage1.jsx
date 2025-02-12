@@ -34,7 +34,7 @@ Winning teams are awarded a cash stipend, as well as an invitation to present th
 https://vtol.org/awards-and-contests/student-design-competition 
 
     `,
-    images: [dbvf_1, dbvf_2, dbvf_3, dbvf_4], 
+    images: []
   },
 ];
 
@@ -44,7 +44,7 @@ export default function ProjectPage() {
       {events.map((event, index) => (
         <div
           key={index}
-          className="flex flex-col items-center justify-center max-w-6xl mx-auto py-16 px-6 gap-10 text-center"
+          className="flex flex-col items-center justify-center max-w-6xl mx-auto pb-8 px-6 gap-10 text-center"
         >
           {event.images.length > 1 ? (
             <Carousel className="relative w-full max-w-[85%]">
@@ -71,7 +71,7 @@ export default function ProjectPage() {
             <img
               src={event.images[0]}
               className="max-w-full rounded-lg"
-              alt={event.title}
+              
             />
           )}
 
