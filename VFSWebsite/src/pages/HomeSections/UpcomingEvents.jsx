@@ -4,6 +4,7 @@ export default function UpcomingEvents() {
         <div className={"py-5 bg-white flex flex-col text-center"}>
             <h1 className={"text-3xl pb-5 font-bold"}>Upcoming Events</h1>
             <div className="flex items-center text-start justify-center gap-5 sm:gap-10 border-y-2 p-4 border-black/20">
+            <div className="flex items-center text-start justify-center gap-5 sm:gap-10 border-y-2 p-4 border-black/20">
                 <div className={"flex flex-col text-center"}>
                     {/*/ prevents the text from wrapping on smaller screens */}
                     <p className={"font-light whitespace-nowrap"}>6-7:30pm</p>
