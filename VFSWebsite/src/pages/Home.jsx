@@ -8,9 +8,9 @@ import ContactSection from "./HomeSections/ContactSection.jsx";
 import Divider from "../components/Divider.jsx";
 import Footer from "../components/Footer.jsx"
 import UpcomingEvents from "./HomeSections/UpcomingEvents.jsx";
-export default function Home(){
+export default function Home() {
     return (
-        <div>
+        <div className="overflow-x-hidden">
             <HeroSection/>
             <Divider/>
             <MissionStatement/>
@@ -22,5 +22,5 @@ export default function Home(){
             <NewsletterSection/>
             <ContactSection/>
         </div>
-    )
+    );
 }
