@@ -16,23 +16,25 @@ const events = [
   {
     title: "DBVF Competition",
     description: `
-      This competition challenges university students to design, build,
-      and operate an electric-powered remote-control vertical take-off and
-      landing (VTOL) aircraft. The goal is to promote hands-on experience
-      with eVTOL and advanced air mobility (AAM) technology, preparing the
-      next generation of engineers and innovators in unmanned aircraft
-      systems.
+This competition challenges university students to design, build, and operate an electric-powered remote-control vertical take-off and landing (VTOL) aircraft. 
+
+The goal is to promote hands-on experience with eVTOL and advanced air mobility (AAM) technology, preparing the next generation of engineers and innovators in unmanned aircraft systems.
     `,
     images: [dbvf_1, dbvf_2, dbvf_3, dbvf_4], 
   },
   {
     title: "Student Design Competition (SDC)",
     description: `
-The Vertical Flight Society (VFS) Student Design Competition (SDC) is an annual aircraft design competition that challenges students to innovate and engineer cutting-edge vertical lift solutions. As the VFS at UCI Chapter, we proudly sponsor a team of undergraduate students to compete in this competition, providing them with the opportunity to apply their aerospace engineering knowledge to real-world design problems. 
+The Vertical Flight Society (VFS) Student Design Competition (SDC) is an annual aircraft design competition that challenges students to innovate and engineer cutting-edge vertical lift solutions. 
 
-Winning teams are awarded a cash stipend, as well as an invitation to present their designs at the Vertical Flight Society’s largest Annual Forum and Technology Display. The competition aims to encourage education and careers in vertical flight with rotating sponsorship between Airbus, The Boeing Company, Bell, Leonardo Helicopters, Sikorsky, a Lockheed Martin Co.; and US Army Research Lab. More information about the comeptition can be found below: 
-https://vtol.org/awards-and-contests/student-design-competition 
+As the VFS at UCI Chapter, we proudly sponsor a team of undergraduate students to compete in this competition, providing them with the opportunity to apply their aerospace engineering knowledge to real-world design problems. 
 
+Winning teams are awarded a cash stipend, as well as an invitation to present their designs at the Vertical Flight Society’s largest Annual Forum and Technology Display. The competition aims to encourage education and careers in vertical flight with rotating sponsorship between Airbus, The Boeing Company, Bell, Leonardo Helicopters, Sikorsky, a Lockheed Martin Co.; and US Army Research Lab. 
+
+More information about the competition can be found below:  
+<a href="https://vtol.org/awards-and-contests/student-design-competition" target="_blank" class="text-blue-500 underline">
+VFS Student Design Competition
+</a>
     `,
     images: []
   },
@@ -42,12 +44,9 @@ export default function ProjectPage() {
   return (
     <div>
       {events.map((event, index) => (
-        <div
-          key={index}
-          className="flex flex-col items-center justify-center max-w-6xl mx-auto pb-8 px-6 gap-10 text-center"
-        >
+        <div key={index} className="flex flex-col items-center justify-center max-w-6xl mx-auto pb-8 px-6 gap-10 text-center">
           {event.images.length > 1 ? (
-            <Carousel className="relative w-full max-w-[85%]">
+            <Carousel className="relative w-full sm:max-w-[85%]">
               <CarouselContent>
                 {event.images.map((image, imgIndex) => (
                   <CarouselItem key={imgIndex} className="flex justify-center">
@@ -60,7 +59,7 @@ export default function ProjectPage() {
                 ))}
               </CarouselContent>
               {/* Navigation Buttons */}
-              <div className="absolute inset-0 flex justify-between items-center px-4">
+              <div className="hidden sm:block absolute inset-0 flex justify-between items-center px-4">
                 <CarouselPrevious className="bg-gray-800/70 rounded-full p-2 hover:bg-gray-900 transition w-10 h-10 flex items-center justify-center" />
                 <CarouselNext className="bg-gray-800/70 rounded-full p-2 hover:bg-gray-900 transition w-10 h-10 flex items-center justify-center" />
               </div>
@@ -74,9 +73,15 @@ export default function ProjectPage() {
               
             />
           )}
+          {/* Project Info */}
+          <div className="max-w-3xl">
+            <h1 className="text-3xl sm:text-4xl text-[#C30D3B] font-bold pb-5">{event.title}</h1>
+            <p 
+              className="text-sm sm:text-md" 
+              dangerouslySetInnerHTML={{ __html: event.description.replace(/\n/g, "<br />") }} 
+            />
+          </div>
 
-          <h1 className="text-4xl text-[#C30D3B] font-bold">{event.title}</h1>
-          <p>{event.description}</p>
         </div>
       ))}
     </div>
