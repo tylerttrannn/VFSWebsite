@@ -5,7 +5,7 @@ export default function About() {
     return (
         <div>
             {/* About Section */}
-            <div className="flex flex-col items-center justify-center max-w-6xl mx-auto py-16 px-12">
+            <div className="flex flex-col items-center justify-center max-w-6xl mx-auto py-16 px-6 sm:px-12">
                 {/* Logo */}
                 <img src={vfslogo} alt="VFS Logo" className="mb-10 w-96 h-auto" />
 
