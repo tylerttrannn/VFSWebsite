@@ -104,21 +104,16 @@ export default function TeamSectionFull(){
     ];
 
     return (
-        <div className ="flex flex-col justify-center items-center w-full space-y-10 sm:p-16 md:p-16 lg:p-32 2xl:p-64">
-            <h1 className = "text-4xl font-bold text-[#C30D3B]">Meet the Team</h1>
-
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 w-full p-4">
-
-            {members.map((member) => (
-                <TeamCard key={member.id} member={member} />
-            ))}
+        <div className="flex flex-col justify-center items-center w-full space-y-10 sm:p-16 md:p-16 lg:p-32 max-w-screen-2xl mx-auto"> 
+            <h1 className="text-4xl font-bold text-[#C30D3B]">Meet the Team</h1>
+    
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 gap-4 sm:gap-6 md:gap-8 lg:gap-10 xl:gap-12 2xl:gap-8 w-full p-4">
+                {members.map((member) => (
+                    <TeamCard key={member.id} member={member} />
+                ))}
             </div>
-
         </div>
-
-
     );
-      
-      
+    
 }
 
