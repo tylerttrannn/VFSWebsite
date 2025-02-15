@@ -10,35 +10,27 @@ import Events1 from "./pages/EventSections/EventPage1.jsx";
 import Events2 from "./pages/EventSections/EventPage2.jsx";
 import Events3 from "./pages/EventSections/EventPage3.jsx";
 import Footer from "./components/Footer.jsx";
-import { Toaster } from "./components/ui/toaster"
 
 function App() {
-  return (
-      <div>
-          <Toaster toastOptions={{
-              unstyled: false,
-              classNames: {
-                  error: 'text-red-400 bg-white border-white p-2',
-                  success: 'text-green-400 bg-white border-white p-2',
-                  warning: 'text-yellow-400 bg-white border-white p-2',
-                  info: 'text-blue-400 bg-white border-white p-2',
-              },
-          }}
-          />
-          <Navbar/>
-          <Routes>
-              <Route path={'/'} element={<Home/>}/>
-              <Route path={'/about'} element={<About/>}/>
-              <Route path={'/news'} element={<News/>}/>
-              <Route path={'/events'} element={<Events/>}/>
-              <Route path={'/projects'} element={<Projects/>}/>
-              <Route path={'/events/1'} element={<Events1/>}/>
-              <Route path={'/events/2'} element={<Events2/>}/>
-              <Route path={'/events/3'} element={<Events3/>}/>
-          </Routes>
-          <Footer/>
-      </div>
-  )
-}
+    return (
+        <div className="flex flex-col min-h-screen">
+            <Navbar/>
+            <div className="flex-grow">
+                <Routes>
+                    <Route path={'/'} element={<Home/>}/>
+                    <Route path={'/about'} element={<About/>}/>
+                    <Route path={'/news'} element={<News/>}/>
+                    <Route path={'/events'} element={<Events/>}/>
+                    <Route path={'/projects'} element={<Projects/>}/>
+                    <Route path={'/events/1'} element={<Events1/>}/>
+                    <Route path={'/events/2'} element={<Events2/>}/>
+                    <Route path={'/events/3'} element={<Events3/>}/>
+                </Routes>
+            </div>
+            <Footer/>
+        </div>
+    )
+  }
+  
 
 export default App
