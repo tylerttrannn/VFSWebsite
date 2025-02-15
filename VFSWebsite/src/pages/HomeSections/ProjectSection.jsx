@@ -46,8 +46,8 @@ export default function ProjectSection() {
                             </CarouselItem>
                         ))}
                     </CarouselContent>
-                    <CarouselPrevious className={"text-blue border-yellow border-2"}/>
-                    <CarouselNext className={"text-blue border-yellow border-2"}/>
+                    <CarouselPrevious className={"hidden sm:block text-blue border-yellow border-2"}/>
+                    <CarouselNext className={"hidden sm:block text-blue border-yellow border-2"}/>
                 </Carousel>
                 <div className="flex justify-center mt-5">
                     <Link

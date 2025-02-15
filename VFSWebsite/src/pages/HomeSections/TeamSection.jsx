@@ -1,4 +1,3 @@
-import React from "react";
 import Plane from "../../assets/images/plane.jpg";
 import TeamCard from "../../components/TeamCard.jsx";
 import {
@@ -120,12 +119,12 @@ export default function TeamSection() {
                 />
                 {/* Text Overlay */}
                 <div
-                    className="absolute inset-0 flex flex-col justify-center items-center bg-black bg-opacity-50 text-black gap-10">
+                    className="absolute inset-0 flex flex-col justify-center items-center bg-black bg-opacity-50 text-black gap-10 ">
                     <h1 className="text-2xl md:text-4xl font-bold text-white">Meet the Team</h1>
                     <Carousel
                         opts={{align: "start"}}
                         className="w-full max-w-5xl">
-                        <CarouselContent className="flex gap-4">
+                        <CarouselContent className="ml-5 flex gap-4">
                             {members.map((member) => (
                                 <CarouselItem
                                     key={member.id}
@@ -135,8 +134,8 @@ export default function TeamSection() {
                                 </CarouselItem>
                             ))}
                         </CarouselContent>
-                        <CarouselPrevious/>
-                        <CarouselNext/>
+                        <CarouselPrevious className ="hidden sm:block" />
+                        <CarouselNext className ="hidden sm:block" />
                     </Carousel>
                 </div>
             </div>

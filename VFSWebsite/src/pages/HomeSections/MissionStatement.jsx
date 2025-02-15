@@ -1,5 +1,3 @@
-import React from "react";
-import VFSSymbol from "../../assets/images/vfs-symbol-small3.webp"
 
 export default function MissionStatement() {
     return (

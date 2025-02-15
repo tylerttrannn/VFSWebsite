@@ -1,8 +1,6 @@
-import React from "react";
-export default function TeamCard({member}) {
-
+export default function TeamCard({ member }) {
     return (
-            <div className="relative w-full aspect-[3.5/4]">
+        <div className="relative w-full aspect-[4/4] sm:aspect-[4/5] md:aspect-[3/4]">
             <img
                 src={member.picture}
                 alt={member.name}

@@ -22,5 +22,6 @@ export default function UpcomingEvents() {
                 </div>
             </div>
         </div>
+        </div>
     )
 }
