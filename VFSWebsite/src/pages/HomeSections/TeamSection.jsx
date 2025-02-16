@@ -17,6 +17,8 @@ import matthew from "../../assets/images/Team/matthew_rea.jpg"
 import brycen from "../../assets/images/Team/brycen_santos.webp"
 import sarghi from "../../assets/images/Team/sarghi_kamboj.webp"
 import nicole from "../../assets/images/Team/nicole_nardi.jpg"
+import ashley from "../../assets/images/Team/ashley_anyanwu.jpeg"
+import tyler from "../../assets/images/Team/tyler_tran.jpeg"
 
 export default function TeamSection() {
     const members = [
@@ -79,11 +81,25 @@ export default function TeamSection() {
             picture:
                 sarghi},
         {
-            id: 8,
+            id: 10,
             name: "Nicole Nardi",
             position: "VP Intern",
             major: "Aerospace Engineering",
             picture:nicole
+        },
+        {
+            id: 11,
+            name: "Ashley Anyanwu",
+            position: "Web Developer",
+            major: "Software Engineering",
+            picture:ashley
+        },
+        {
+            id: 12,
+            name: "Tyler Tran",
+            position: "Web Developer",
+            major: "Computer Science",
+            picture:tyler
         },
     ];
     return (
