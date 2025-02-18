@@ -1,5 +1,5 @@
-import kickoff from "../../assets/Events/kickoff_event/image1.webp"
-import kickoff1 from "../../assets/Events/kickoff_event/image2.webp"
+import kickoff from "../../assets/images/Events/kickoff_event/image1.webp"
+import kickoff1 from "../../assets/images/Events/kickoff_event/image2.webp"
 
 import {
     Carousel,

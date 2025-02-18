@@ -6,10 +6,10 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 
-import dbvf_1 from "../../assets/Projects/dbvf_comp/image1.jpg";
-import dbvf_2 from  "../../assets/Projects/dbvf_comp/image2.jpg";
-import dbvf_3 from  "../../assets/Projects/dbvf_comp/image3.jpg";
-import dbvf_4 from  "../../assets/Projects/dbvf_comp/image4.png";
+import dbvf_1 from "../../assets/images/Projects/dbvf_comp/image1.jpg";
+import dbvf_2 from "../../assets/images/Projects/dbvf_comp/image2.jpg";
+import dbvf_3 from "../../assets/images/Projects/dbvf_comp/image3.jpg";
+import dbvf_4 from "../../assets/images/Projects/dbvf_comp/image4.png";
 
 
 const events = [
@@ -71,6 +71,7 @@ export default function ProjectPage() {
             <img
               src={event.images[0]}
               className="max-w-full rounded-lg"
+              alt={"project image"}
               
             />
           )}

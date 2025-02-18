@@ -1,18 +1,18 @@
-import supernal from "../../assets/Events/supernal_tour/supernal.avif"
+import supernal from "../../assets/images/Events/supernal_tour/supernal.avif"
 
-import overair_img from "../../assets/Events/overair_tour/overair.avif"
+import overair_img from "../../assets/images/Events/overair_tour/overair.avif"
 
-import dietrich_flyer from "../../assets/Events/dietrich_event/flyer.webp"
-import dietrich_img from "../../assets/Events/dietrich_event/dietrich.webp"
+import dietrich_flyer from "../../assets/images/Events/dietrich_event/flyer.webp"
+import dietrich_img from "../../assets/images/Events/dietrich_event/dietrich.webp"
 
-import nasa_flyer from "../../assets/Events/nasa_event/flyer.webp"
-import nasa_img1 from "../../assets/Events/nasa_event/jason.webp"
-import nasa_img2 from "../../assets/Events/nasa_event/image1.webp"
+import nasa_flyer from "../../assets/images/Events/nasa_event/flyer.webp"
+import nasa_img1 from "../../assets/images/Events/nasa_event/jason.webp"
+import nasa_img2 from "../../assets/images/Events/nasa_event/image1.webp"
 
-import speaker from "../../assets/Events/speaker_event/puneet_singh.avif"
-import speaker3 from "../../assets/Events/speaker_event/overair_speaker.webp"
-import speaker1 from "../../assets/Events/speaker_event/image2.webp"
-import speaker2 from "../../assets/Events/speaker_event/image3.webp"
+import speaker from "../../assets/images/Events/speaker_event/puneet_singh.avif"
+import speaker3 from "../../assets/images/Events/speaker_event/overair_speaker.webp"
+import speaker1 from "../../assets/images/Events/speaker_event/image2.webp"
+import speaker2 from "../../assets/images/Events/speaker_event/image3.webp"
 
 import {
     Carousel,

@@ -1,4 +1,4 @@
-import gad from "../../assets/Events/upcoming_events/Gad_Speaker.png"
+import gad from "../../assets/images/Events/upcoming_events/Gad_Speaker.png"
 export default function UpcomingEvents() {
     return (
         <div className={"py-5 bg-white flex flex-col text-center"}>

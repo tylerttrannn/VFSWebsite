@@ -1,8 +1,8 @@
 import React from "react";
 import ProjectCard from "../../components/ProjectCard.jsx";
 import {Link} from "react-router";
-import DBVF from "../../assets/Projects/dbvf_comp/image4.png"
-import SDC from "../../assets/Projects/SDC.jpg"
+import DBVF from "../../assets/images/Projects/dbvf_comp/image4.png"
+import SDC from "../../assets/images/Projects/SDC.jpg"
 import {
     Carousel,
     CarouselContent,
