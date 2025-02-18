@@ -28,11 +28,7 @@ export default function About() {
                 <div className="text-center mt-16">
                     <h2 className="text-[#C30D3B] font-bold text-4xl mb-6">Mission</h2>
                     <p className="text-lg leading-relaxed text-gray-700  mx-auto">
-                        Provide opportunity for technical data exchange and dissemination; promote awareness of vertical flight capabilities, challenges, and development; engage in community outreach and advocate for public policy consistent with the goals of the Society; leverage the technical base to explore innovation; and foster a diverse and inclusive environment that promotes careers and professional advancement in vertical flight.
-                    </p>
-                    <br />
-                    <p className="text-lg leading-relaxed text-gray-700 mx-auto">
-                        The Vertical Flight Society at UCI is dedicated to bridging the gap between undergraduate engineering students and the professional aerospace industry, with a strong emphasis on vertical flight technology. Collaborating closely with the VFS SoCal Chapter, they organize events such as guest speakers, networking events, technical workshops, company tours, and participation in student competitions. Founded in Spring 2023, the long-term goal is to establish strong resources and opportunities for future engineering students interested in vertical flight technology.
+                        To provide undergraduate students with meaningful professional development opportunities in vertical flight technology through events, workshops, and competition experience.
                     </p>
                 </div>
             </div>
