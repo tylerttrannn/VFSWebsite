@@ -50,7 +50,7 @@ export default function Navbar() {
                     <Link to="/" className={`${buttonVariants({ variant: "ghost" })} w-full`} onClick={() => setIsOpen(false)}>Home</Link>
                     <Link to="/about" className={`${buttonVariants({ variant: "ghost" })} w-full`} onClick={() => setIsOpen(false)}>About</Link>
                     <Link to="/news" className={`${buttonVariants({ variant: "ghost" })} w-full`} onClick={() => setIsOpen(false)}>News</Link>
-                    <Link to="/events/1" className={`${buttonVariants({ variant: "ghost" })} w-full`} onClick={() => setIsOpen(false)}>Events</Link>
+                    <Link to="/events/1" className={`${buttonVariants({ variant: "ghost" })} w-full`} onClick={() => setIsOpen(false)}>Past Events</Link>
                     <Link to="/projects" className={`${buttonVariants({ variant: "ghost" })} w-full`} onClick={() => setIsOpen(false)}>Projects</Link>
 
                     
