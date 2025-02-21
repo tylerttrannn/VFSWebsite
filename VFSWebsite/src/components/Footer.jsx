@@ -21,7 +21,6 @@ export default function Footer() {
                     <div className="flex flex-col gap-5">
                         <h1 className="font-bold">Resources</h1>
                         <h1 className="font-light cursor-pointer" onClick={() =>window.location.href = 'https://vtol.org'}>VFS Page</h1>
-                        <h1 className="font-light cursor-pointer">Student Handbook</h1>
                     </div>
 
                     <div className="flex flex-col gap-5">
