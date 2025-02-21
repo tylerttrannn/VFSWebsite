@@ -11,9 +11,10 @@ import sarghi from "../../assets/images/Team/sarghi_kamboj.webp";
 import nicole from "../../assets/images/Team/nicole_nardi.jpg";
 import ashley from "../../assets/images/Team/ashley_anyanwu.jpeg"
 import tyler from "../../assets/images/Team/tyler_tran.jpeg"
+import zara from "../../assets/images/Team/zarnigor_sodikova.webp"
 
 export default function TeamSectionFull(){
-   const members = [
+    const members = [
         {
             id: 1,
             name: "Lucas Park",
@@ -57,21 +58,21 @@ export default function TeamSectionFull(){
             position: "Membership Chair",
             major: "Aerospace Engineering",
             picture:
-                matthew},
+            matthew},
         {
             id: 8,
             name: "Brycen Santos",
             position: "Treasury Intern",
             major: "Mechanical Engineering",
             picture:
-                brycen},
+            brycen},
         {
             id: 9,
             name: "Sarghi Kamboj",
             position: "PR Intern",
             major: "Aerospace Engineering",
             picture:
-                sarghi},
+            sarghi},
         {
             id: 10,
             name: "Nicole Nardi",
@@ -93,6 +94,13 @@ export default function TeamSectionFull(){
             major: "Computer Science",
             picture:tyler
         },
+        {
+            id: 13,
+            name: "Zarnigor Sodikova",
+            position: "Executive Chair",
+            major: "Biomedical Engineering",
+            picture: zara
+        }
     ];
 
     return (

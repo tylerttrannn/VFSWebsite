@@ -1,10 +1,10 @@
-import careerFlyer from "../../assets/images/Events/career_night/flyer.webp"
-import career1 from "../../assets/images/Events/career_night/carrer.avif"
-import career2 from "../../assets/images/Events/career_night/image2.webp"
-import career3 from "../../assets/images/Events/career_night/image3.webp"
-import career4 from "../../assets/images/Events/career_night/image4.webp"
-import career5 from "../../assets/images/Events/career_night/image5.webp"
-import career6 from "../../assets/images/Events/career_night/image1.webp"
+import rotorcraft_flyer3 from "../../assets/images/Events/rotorcraft_workshop3/flyer.png"
+import workshop3_image1 from "../../assets/images/Events/rotorcraft_workshop3/rotorcraft_1.webp"
+import workshop3_image2 from "../../assets/images/Events/rotorcraft_workshop3/rotorcraft_2.webp"
+import workshop3_image3 from "../../assets/images/Events/rotorcraft_workshop3/rotorcraft_3.webp"
+import workshop3_image4 from "../../assets/images/Events/rotorcraft_workshop3/rotorcraft_4.webp"
+import workshop3_image5 from "../../assets/images/Events/rotorcraft_workshop3/rotorcraft_5.webp"
+import workshop3_image6 from "../../assets/images/Events/rotorcraft_workshop3/rotorcraft_6.webp"
 
 import diachun_flyer from "../../assets/images/Events/diachun_event/flyer.webp"
 import diachun1 from "../../assets/images/Events/diachun_event/image1.webp"
@@ -50,6 +50,12 @@ import {
 export default function Events() {
   const events = [
       {
+          title: "Rotorcraft Workshop #3",
+          date: "February 2025",
+          description: "In the third session of our Rotorcraft 101 Workshop Series, Professor Jacqueline Huynh led an insightful discussion on rotorcraft noise, aeroacoustics, and policy considerations for Advanced Air Mobility. Students explored rotor noise sources, mitigation strategies, and the impact of acoustics on future rotorcraft design.",
+          images: [rotorcraft_flyer3, workshop3_image1, workshop3_image2, workshop3_image3, workshop3_image4, workshop3_image5, workshop3_image6],
+      },
+      {
           title: "Ben Diachun Speaker Event",
           date: "November 2024",
           description: "As a former executive at Scaled Composites, Pivotal, and Supernal, Ben Diachun has led teams to develop over 17 revolutionary aircraft and spacecraft. Ben delivered an insightful talk titled: “Builidng Your Career: A Guide for Future Aerospace Leaders at UC Irvine”, where he shared his extraordinary journey in aerospace, career tips for undergraduates, and the future of the industry. ",
@@ -73,16 +79,7 @@ export default function Events() {
           description: "In the kickoff session of our Rotorcraft 101 Workshop Series led by Dr. Frederick Tsai, Sr. Rotor Dynamics Engineer at Supernal, students gained a foundational introduction to rotorcraft engineering. The workshop covered a history of rotorcraft, momentum theory in hover, and flight mechanics including axial climb, descent, and forward flight. Key topics including axial flow states, swashplates, collective and cyclic control, and ground resonance were also introduced. ",
           images: [rotorcraft_flyer1, workshop1_image1, workshop1_image2, workshop1_image3]
       },
-    {
-      title: "Spring Career Development Night",
-      date: "May 2024",
-      description: `
-VFS at UCI hosted Axel Radermacher, Co-Founder and Head of Product at Odys Aviation, Jason Holmstedt, Sr. Director of Technology and Innovation at Intellisense Systems, Jim Orbon, Senior Technical Program Manager at Anduril, and Professor Jacqueline Huynh, Assistant Professor at UCI’s MAE Department, for a career development night. The goal of the event was to expose students to diverse career paths and network with some of the local industry’s senior and executive leaders. 
 
-`,
-      images: [careerFlyer, career1, career2, career3, career4, career5, career6]
-
-    }
   ];
 
   return (

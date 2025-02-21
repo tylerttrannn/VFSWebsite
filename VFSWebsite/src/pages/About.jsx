@@ -28,7 +28,7 @@ export default function About() {
                 <div className="text-center mt-16">
                     <h2 className="text-[#C30D3B] font-bold text-4xl mb-6">Mission</h2>
                     <p className="text-lg leading-relaxed text-gray-700  mx-auto">
-                        To provide undergraduate students with meaningful professional development opportunities in vertical flight technology through events, workshops, and competition experience.
+                        Our mission is to provide undergraduate students with meaningful professional development opportunities in vertical flight technology through events, workshops, and competition experience.
                     </p>
                 </div>
             </div>

@@ -19,6 +19,7 @@ import sarghi from "../../assets/images/Team/sarghi_kamboj.webp"
 import nicole from "../../assets/images/Team/nicole_nardi.jpg"
 import ashley from "../../assets/images/Team/ashley_anyanwu.jpeg"
 import tyler from "../../assets/images/Team/tyler_tran.jpeg"
+import zara from "../../assets/images/Team/zarnigor_sodikova.webp"
 
 export default function TeamSection() {
     const members = [
@@ -101,6 +102,13 @@ export default function TeamSection() {
             major: "Computer Science",
             picture:tyler
         },
+        {
+            id: 13,
+            name: "Zarnigor Sodikova",
+            position: "Executive Chair",
+            major: "Biomedical Engineering",
+            picture: zara
+        }
     ];
     return (
         <div className="relative h-[32rem]">

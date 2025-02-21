@@ -1,6 +1,11 @@
 import kickoff from "../../assets/images/Events/kickoff_event/image1.webp"
 import kickoff1 from "../../assets/images/Events/kickoff_event/image2.webp"
 
+import speaker from "../../assets/images/Events/speaker_event/puneet_singh.avif";
+import speaker1 from "../../assets/images/Events/speaker_event/image2.webp";
+import speaker2 from "../../assets/images/Events/speaker_event/image3.webp";
+import speaker3 from "../../assets/images/Events/speaker_event/overair_speaker.webp";
+
 import {
     Carousel,
     CarouselContent,
@@ -21,6 +26,13 @@ import {
 
 export default function Events1() {
     const events = [
+        {
+            title: "Rotorcraft & eVTOL Technology",
+            date: "May 2023",
+            description: `
+Dr. Puneet Singh, Staff Engineer at Overair, joined us for an engaging discussion on the development of the Butterfly eVTOL aircraft and the future of Urban Air Mobility. He shared insights into rotorcraft aeromechanics, flight dynamics, and control laws, providing students with a deeper understanding of the challenges and innovations shaping next-generation electric vertical flight. `,
+            images: [speaker, speaker1, speaker2, speaker3]
+        },
         {
             title: "Kick-off Event ",
             date: "May 2023",
