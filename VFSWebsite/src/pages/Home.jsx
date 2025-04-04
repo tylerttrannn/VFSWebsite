@@ -6,7 +6,6 @@ import TeamSection from "./HomeSections/TeamSection.jsx";
 import NewsletterSection from "./HomeSections/NewsletterSection.jsx";
 import ContactSection from "./HomeSections/ContactSection.jsx";
 import Divider from "../components/Divider.jsx";
-import Footer from "../components/Footer.jsx"
 import UpcomingEvents from "./HomeSections/UpcomingEvents.jsx";
 export default function Home(){
     return (
