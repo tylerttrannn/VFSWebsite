@@ -6,7 +6,7 @@ import About from "./pages/About.jsx";
 import Projects from "./pages/Projects.jsx";
 import News from "./pages/News.jsx";
 import Events from "./pages/Events.jsx";
-import Events1 from "./pages/EventSections/EventPage1.jsx";
+import Events1 from "./pages/EventSections/EventPage1";
 import Events2 from "./pages/EventSections/EventPage2.jsx";
 import Events3 from "./pages/EventSections/EventPage3.jsx";
 import Footer from "./components/Footer.jsx";

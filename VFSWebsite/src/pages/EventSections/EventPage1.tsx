@@ -1,3 +1,4 @@
+
 import rotorcraft_flyer3 from "../../assets/images/Events/rotorcraft_workshop3/flyer.png"
 import workshop3_image1 from "../../assets/images/Events/rotorcraft_workshop3/rotorcraft_1.webp"
 import workshop3_image2 from "../../assets/images/Events/rotorcraft_workshop3/rotorcraft_2.webp"
@@ -29,6 +30,10 @@ import workshop1_image1 from "../../assets/images/Events/rotorcraft_workshop1/im
 import workshop1_image2 from "../../assets/images/Events/rotorcraft_workshop1/image2.webp"
 import workshop1_image3 from "../../assets/images/Events/rotorcraft_workshop1/image3.webp"
 
+
+import { type CarouselApi } from "@/components/ui/carousel"
+
+
 import {
   Carousel,
   CarouselContent,
@@ -45,9 +50,14 @@ import {
     PaginationLink,
     PaginationNext,
 } from "@/components/ui/pagination"
+import React from "react"
+import EventCarousel from "./EventCarsouel"
 
 
 export default function Events() {
+
+ 
+
   const events = [
       {
           title: "Rotorcraft Workshop #3",
@@ -90,25 +100,7 @@ export default function Events() {
 
                 <div className="md:w-1/2 w-full flex items-center justify-center relative pb-5">
                 {event.images && event.images.length > 0 && (
-                    <Carousel className="relative w-full sm:max-w-[65%]">
-                    <CarouselContent>
-                        {event.images.map((image, index) => (
-                        <CarouselItem key={index} className="flex justify-center">
-                            <img
-                            src={image}
-                            className="rounded-lg w-full sm:h-[320px] h-[350px] object-contain"
-                            alt={`Slide ${index + 1}`}
-                            />
-                        </CarouselItem>
-                        ))}
-                    </CarouselContent>
-
-                    {/* Modifying the styling of the buttons to make them more compact */}
-                    <div className="hidden sm:block absolute inset-0 flex justify-between items-center px-4">
-                        <CarouselPrevious className="bg-gray-800/70 rounded-full p-2 hover:bg-gray-900 transition w-10 h-10 flex items-center justify-center" />
-                        <CarouselNext className="bg-gray-800/70 rounded-full p-2 hover:bg-gray-900 transition w-10 h-10 flex items-center justify-center" />
-                    </div>
-                    </Carousel>
+                    <EventCarousel images={event.images} />
                 )}
                 </div>
 

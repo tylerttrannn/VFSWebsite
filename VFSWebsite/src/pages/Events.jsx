@@ -1,4 +1,4 @@
-import Event from "./EventSections/EventPage1.jsx";
+import Event from "./EventSections/EventPage1";
 
 export default function Events() {
     return (
