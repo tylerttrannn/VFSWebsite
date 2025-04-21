@@ -17,6 +17,7 @@ import career4 from "../../assets/images/Events/career_night/image4.webp";
 import career5 from "../../assets/images/Events/career_night/image5.webp";
 import career6 from "../../assets/images/Events/career_night/image1.webp";
 
+import EventCarousel from "./EventCarsouel"
 
 import {
     Carousel,
@@ -93,25 +94,8 @@ Dr. Jason Cornelius, a researcher supporting NASA’s Dragonfly mission, joined 
 
                 <div className="md:w-1/2 w-full flex items-center justify-center relative pb-5">
                 {event.images && event.images.length > 0 && (
-                    <Carousel className="relative w-full sm:max-w-[65%]">
-                    <CarouselContent>
-                        {event.images.map((image, index) => (
-                        <CarouselItem key={index} className="flex justify-center">
-                            <img
-                            src={image}
-                            className="rounded-lg w-full sm:h-[320px] h-[350px] object-contain"
-                            alt={`Slide ${index + 1}`}
-                            />
-                        </CarouselItem>
-                        ))}
-                    </CarouselContent>
+                    <EventCarousel images={event.images} />
 
-                    {/* Modifying the styling of the buttons to make them more compact */}
-                    <div className="hidden sm:block absolute inset-0 flex justify-between items-center px-4">
-                        <CarouselPrevious className="bg-gray-800/70 rounded-full p-2 hover:bg-gray-900 transition w-10 h-10 flex items-center justify-center" />
-                        <CarouselNext className="bg-gray-800/70 rounded-full p-2 hover:bg-gray-900 transition w-10 h-10 flex items-center justify-center" />
-                    </div>
-                    </Carousel>
                 )}
                 </div>
 

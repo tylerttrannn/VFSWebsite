@@ -16,18 +16,20 @@ export default function EventCarousel({ images }: { images: string[] }) {
   const [count, setCount] = React.useState(0)
 
   React.useEffect(() => {
-    if (!api) return
+    if (!api) return;
 
     const update = () => {
-      setCurrent(api.selectedScrollSnap())
-      setCount(api.scrollSnapList().length)
-    }
+      setCurrent(api.selectedScrollSnap());
+      setCount(api.scrollSnapList().length);
+    };
 
-    api.on("select", update)
-    update()
+    api.on("select", update);
+    update();
 
-    return () => api.off("select", update)
-  }, [api])
+    return () => {
+      api.off("select", update);
+    };
+  }, [api]);
 
   return (
     <div className="w-full sm:max-w-[65%] flex flex-col items-center">

@@ -22,6 +22,7 @@ import {
     PaginationLink,
     PaginationPrevious,
 } from "@/components/ui/pagination"
+import EventCarousel from "./EventCarsouel"
 
 
 export default function Events1() {
@@ -51,25 +52,7 @@ The Kick-off Event celebrated the launch of the Vertical Flight Society (VFS) at
 
                 <div className="md:w-1/2 w-full flex items-center justify-center relative pb-5">
                 {event.images && event.images.length > 0 && (
-                    <Carousel className="relative w-full sm:max-w-[65%]">
-                    <CarouselContent>
-                        {event.images.map((image, index) => (
-                        <CarouselItem key={index} className="flex justify-center">
-                            <img
-                            src={image}
-                            className="rounded-lg w-full sm:h-[320px] h-[350px] object-contain"
-                            alt={`Slide ${index + 1}`}
-                            />
-                        </CarouselItem>
-                        ))}
-                    </CarouselContent>
-
-                    {/* Modifying the styling of the buttons to make them more compact */}
-                    <div className="hidden sm:block absolute inset-0 flex justify-between items-center px-4">
-                        <CarouselPrevious className="bg-gray-800/70 rounded-full p-2 hover:bg-gray-900 transition w-10 h-10 flex items-center justify-center" />
-                        <CarouselNext className="bg-gray-800/70 rounded-full p-2 hover:bg-gray-900 transition w-10 h-10 flex items-center justify-center" />
-                    </div>
-                    </Carousel>
+                    <EventCarousel images={event.images} />
                 )}
                 </div>
 
