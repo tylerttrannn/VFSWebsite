@@ -4,6 +4,8 @@ import dbvf_1 from "../../assets/images/Projects/dbvf_comp/image1.jpg";
 import dbvf_2 from "../../assets/images/Projects/dbvf_comp/image2.jpg";
 import dbvf_3 from "../../assets/images/Projects/dbvf_comp/image3.jpg";
 import dbvf_4 from "../../assets/images/Projects/dbvf_comp/image4.png";
+import SDC from "../../assets/images/Projects/SDC.jpg"
+
 
 const events = [
   {
@@ -29,7 +31,7 @@ More information about the competition can be found below:
 VFS Student Design Competition
 </a>
     `,
-    images: [dbvf_1],
+    images: [SDC],
   },
 ];
 
@@ -37,8 +39,8 @@ export default function ProjectPage() {
   return (
     <div>
       {events.map((event, i) => (
-        <section key={i} className="flex flex-col items-center justify-center mx-auto pb-8 px-6 gap-10 text-center">
-          <EventCarousel images={event.images} className = "rounded-lg w-full md:h-[520px] h-[350px] object-contain"/>
+        <section key={i} className="flex flex-col items-center justify-center mx-auto pb-8 px-6 gap-10 mb-16 text-center">
+          <EventCarousel images={event.images} className = "rounded-lg w-full md:h-[500px] h-[350px] object-contain"/>
 
           <div className="max-w-3xl">
             <h1 className="text-3xl sm:text-4xl text-[#C30D3B] font-bold pb-5">

@@ -1,4 +1,4 @@
-import ProjectPage1 from "./ProjectSections/projectPage1.jsx";
+import ProjectPage1 from "./ProjectSections/ProjectPage1";
 
 
 
