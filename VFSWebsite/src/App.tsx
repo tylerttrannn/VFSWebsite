@@ -1,14 +1,14 @@
 import './index.css'
 import { Routes, Route } from "react-router";
-import Home from "./pages/Home.jsx";
+import Home from "./pages/Home";
 import Navbar from "./components/Navbar.jsx";
-import About from "./pages/About.jsx";
+import About from "./pages/About.js";
 import Projects from "./pages/Projects.jsx";
-import News from "./pages/News.jsx";
-import Events from "./pages/Events.jsx";
+import News from "./pages/News.js";
+import Events from "./pages/Events.js";
 import Events1 from "./pages/EventSections/EventPage1";
-import Events2 from "./pages/EventSections/EventPage2.jsx";
-import Events3 from "./pages/EventSections/EventPage3.jsx";
+import Events2 from "./pages/EventSections/EventPage2.js";
+import Events3 from "./pages/EventSections/EventPage3.js";
 import Footer from "./components/Footer.jsx";
 
 function App() {

@@ -1,11 +1,11 @@
-import HeroSection from "./HomeSections/HeroSection.jsx"
-import MissionStatement from "./HomeSections/MissionStatement.jsx";
+import HeroSection from "./HomeSections/HeroSection.js"
+import MissionStatement from "./HomeSections/MissionStatement.js";
 import ProjectSection from "./HomeSections/ProjectSection.jsx";
-import TeamSection from "./HomeSections/TeamSection.jsx";
-import NewsletterSection from "./HomeSections/NewsletterSection.jsx";
-import ContactSection from "./HomeSections/ContactSection.jsx";
+import TeamSection from "./HomeSections/TeamSection.js";
+import NewsletterSection from "./HomeSections/NewsletterSection.js";
+import ContactSection from "./HomeSections/ContactSection.js";
 import Divider from "../components/Divider.jsx";
-import UpcomingEvents from "./HomeSections/UpcomingEvents.jsx";
+import UpcomingEvents from "./HomeSections/UpcomingEvents.js";
 export default function Home() {
     return (
         <div className="">

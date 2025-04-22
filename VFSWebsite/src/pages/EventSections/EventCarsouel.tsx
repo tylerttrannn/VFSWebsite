@@ -1,5 +1,3 @@
-"use client"
-
 import * as React from "react"
 import {
   Carousel,
@@ -10,7 +8,16 @@ import { type CarouselApi } from "@/components/ui/carousel"
 import { ArrowLeft, ArrowRight } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
-export default function EventCarousel({ images }: { images: string[] }) {
+
+type Props = {
+  images: string[]
+  className?: string  
+}
+
+
+
+
+export default function EventCarousel({ images, className }: Props) {
   const [api, setApi] = React.useState<CarouselApi | null>(null)
   const [current, setCurrent] = React.useState(0)
   const [count, setCount] = React.useState(0)
@@ -32,7 +39,7 @@ export default function EventCarousel({ images }: { images: string[] }) {
   }, [api]);
 
   return (
-    <div className="w-full sm:max-w-[65%] flex flex-col items-center">
+    <div className="w-full sm:max-w-[65%] md:max-w-[85%] flex flex-col items-center">
       {/* Carousel */}
       <Carousel setApi={setApi} className="w-full">
         <CarouselContent>
@@ -41,7 +48,10 @@ export default function EventCarousel({ images }: { images: string[] }) {
               <img
                 src={image}
                 alt={`Image ${index}`}
-                className="rounded-lg w-full sm:h-[320px] h-[350px] object-contain"
+                className={
+                  className ??
+                  "rounded-lg w-full sm:h-[320px] h-[350px] object-contain"
+                }
               />
             </CarouselItem>
           ))}

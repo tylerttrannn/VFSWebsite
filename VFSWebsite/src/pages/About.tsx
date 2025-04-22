@@ -1,5 +1,5 @@
 import vfslogo from "../assets/images/vfsatucilogo.webp";
-import TeamSectionFull from "./AboutSections/TeamSectionFull.jsx";
+import TeamSectionFull from "./AboutSections/TeamSectionFull.js";
 
 export default function About() {
     return (

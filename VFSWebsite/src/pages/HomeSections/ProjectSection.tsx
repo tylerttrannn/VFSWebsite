@@ -11,7 +11,29 @@ import {
     CarouselPrevious,
 } from "@/components/ui/carousel";
 
+import { Button } from "@/components/ui/button"
+import { ArrowLeft, ArrowRight } from "lucide-react"
+
 export default function ProjectSection() {
+
+    const [api, setApi] = React.useState<CarouselApi | null>(null)
+    const [current, setCurrent] = React.useState(0)
+    const [count, setCount] = React.useState(0)
+
+
+    React.useEffect(() => {
+        if (!api) return
+    
+        setCount(api.scrollSnapList().length)
+        setCurrent(api.selectedScrollSnap() + 1)
+    
+        const onSelect = () => setCurrent(api.selectedScrollSnap() + 1)
+        api.on("select", onSelect)
+    
+        return () => api.off("select", onSelect)
+      }, [api])
+    
+
     const projects = [
         {
             id:1,
@@ -38,7 +60,7 @@ export default function ProjectSection() {
             <div className="my-6 sm:my-10 flex flex-col w-full max-w-6xl text-center">
                 <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold">PROJECTS</h1>
 
-                <Carousel opts={{ align: "center" }} className="w-full relative mt-6">
+                <Carousel setApi = {setApi} opts={{ align: "center" }} className="w-full relative mt-6">
                     <CarouselContent className="flex gap-4">
                         {projects.map((project) => (
                             <CarouselItem key={project.id} className="w-full">
@@ -46,9 +68,20 @@ export default function ProjectSection() {
                             </CarouselItem>
                         ))}
                     </CarouselContent>
-                    <CarouselPrevious className={"hidden sm:block text-blue border-yellow border-2"}/>
-                    <CarouselNext className={"hidden sm:block text-blue border-yellow border-2"}/>
+
                 </Carousel>
+
+
+                {count > 0 && (
+                    <div className = "mb-4 flex items-center justify-center gap-4">
+                        <Button variant="outline" className = "rounded-full" onClick={() => api?.scrollPrev()}><ArrowLeft/></Button>
+                        <span className="text-sm text-gray-800 font-medium">
+                        Slide {current } of {count}
+                        </span>
+                        <Button variant="outline" className = "rounded-full" onClick={() => api?.scrollNext()}><ArrowRight/></Button>
+                    </div>
+                )}
+                
                 <div className="flex justify-center mt-5">
                     <Link
                         to="/projects"
