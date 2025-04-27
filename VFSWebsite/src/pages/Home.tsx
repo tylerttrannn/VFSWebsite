@@ -6,6 +6,8 @@ import NewsletterSection from "./HomeSections/NewsletterSection.js";
 import ContactSection from "./HomeSections/ContactSection.js";
 import Divider from "../components/Divider.jsx";
 import UpcomingEvents from "./HomeSections/UpcomingEvents.js";
+import StripeCheckout from "./HomeSections/StripeCheckout";
+
 export default function Home() {
     return (
         <div className="">
@@ -13,6 +15,7 @@ export default function Home() {
             <Divider/>
             <MissionStatement/>
             <ProjectSection/>
+            <StripeCheckout/>
             <TeamSection/>
             <Divider/>
             <UpcomingEvents/>

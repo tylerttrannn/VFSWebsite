@@ -6,3 +6,9 @@
   from = "/*"
   to = "/index.html"
   status = 200
+
+[dev]
+command = "vite"
+targetPort = 5173
+port = 8888
+
