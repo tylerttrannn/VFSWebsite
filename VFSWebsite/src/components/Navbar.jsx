@@ -19,14 +19,16 @@ export default function Navbar() {
                 <Link to={"/"}>
                     <img className="w-[180px]" src={Logo} alt="Vertical Flight Society Logo"/>
                 </Link>
-                <div className="hidden md:flex gap-12 text-grey">
+                <div className="hidden xl:flex gap-12 text-grey">
                     <Link to="/" className={"relative px-4 py-2 ease-in-out duration-300 hover:bg-grey/10 hover:px-4 hover:py-2 hover:rounded-sm"}>Home</Link>
                     <Link to="/about" className={"relative px-4 py-2 ease-in-out duration-300 hover:bg-grey/10 hover:px-4 hover:py-2 hover:rounded-sm"}>About</Link>
                     <Link to="/news" className={"relative px-4 py-2 ease-in-out duration-300 hover:bg-grey/10 hover:px-4 hover:py-2 hover:rounded-sm"}>News</Link>
+                    <Link to="/events/1" className={"relative px-4 py-2 ease-in-out duration-300 hover:bg-grey/10 hover:px-4 hover:py-2 hover:rounded-sm"}>Upcoming Events</Link>
                     <Link to="/events/1" className={"relative px-4 py-2 ease-in-out duration-300 hover:bg-grey/10 hover:px-4 hover:py-2 hover:rounded-sm"}>Past Events</Link>
                     <Link to="/projects" className={"relative px-4 py-2 ease-in-out duration-300 hover:bg-grey/10 hover:px-4 hover:py-2 hover:rounded-sm"}>Projects</Link>
+
                 </div>
-                <div className="hidden md:flex gap-8 text-lg text-grey">
+                <div className="hidden xl:flex gap-8 text-lg text-grey">
                     <Link to={"https://www.instagram.com/vfs_uci/"} className={"hover:text-yellow"}>
                         <FontAwesomeIcon icon={faInstagram} />
                     </Link>
@@ -39,17 +41,18 @@ export default function Navbar() {
 
                 </div>
 
-                <button className="md:hidden text-grey text-2xl" onClick={() => setIsOpen(!isOpen)}>
+                <button className="xl:hidden text-grey text-2xl" onClick={() => setIsOpen(!isOpen)}>
                         <FontAwesomeIcon icon={isOpen ? faTimes : faBars} />
                 </button>
             </div>
 
             {/* Mobile Navbar*/}
-            <div className={`md:hidden overflow-hidden transition-all duration-700 ease-in-out ${isOpen ? "max-h-[350px]" : "max-h-0"}`} >
+            <div className={`xl:hidden overflow-hidden transition-all duration-700 ease-in-out ${isOpen ? "max-h-[375px]" : "max-h-0"}`} >
                 <div className="flex flex-col items-center gap-4 bg-white p-4">
                     <Link to="/" className={`${buttonVariants({ variant: "ghost" })} w-full`} onClick={() => setIsOpen(false)}>Home</Link>
                     <Link to="/about" className={`${buttonVariants({ variant: "ghost" })} w-full`} onClick={() => setIsOpen(false)}>About</Link>
                     <Link to="/news" className={`${buttonVariants({ variant: "ghost" })} w-full`} onClick={() => setIsOpen(false)}>News</Link>
+                    <Link to="/events/1" className={`${buttonVariants({ variant: "ghost" })} w-full`} onClick={() => setIsOpen(false)}>Upcoming Events</Link>
                     <Link to="/events/1" className={`${buttonVariants({ variant: "ghost" })} w-full`} onClick={() => setIsOpen(false)}>Past Events</Link>
                     <Link to="/projects" className={`${buttonVariants({ variant: "ghost" })} w-full`} onClick={() => setIsOpen(false)}>Projects</Link>
 
