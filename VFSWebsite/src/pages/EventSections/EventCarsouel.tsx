@@ -50,7 +50,7 @@ export default function EventCarousel({ images, className }: Props) {
                 alt={`Image ${index}`}
                 className={
                   className ??
-                  "rounded-lg w-full sm:h-[320px] h-[350px] object-contain"
+                  "rounded-lg w-full sm:h-[450px] h-[370px] object-contain"
                 }
               />
             </CarouselItem>

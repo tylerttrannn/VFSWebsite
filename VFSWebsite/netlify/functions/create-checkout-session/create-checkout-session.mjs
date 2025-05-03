@@ -1,4 +1,6 @@
-const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY);
+import Stripe from 'stripe';
+const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
+
 
 export default async (request, context) => {
   try {
@@ -10,22 +12,19 @@ export default async (request, context) => {
     const body = await request.json();
     console.log('Incoming body:', body);
 
-    const priceId = body.priceId;
-    if (!priceId) {
-      console.error('Missing priceId in request body.');
-      throw new Error('Missing priceId.');
+    const lineItems = body.lineItems;
+
+    if (!Array.isArray(lineItems) || lineItems.length === 0) {
+      console.error("Missing or invalid lineItems.");
+      throw new Error("Missing or invalid lineItems.");
     }
 
     const session = await stripe.checkout.sessions.create({
-      line_items: [
-        {
-          price: priceId,
-          quantity: 1,
-        },
-      ],
-      mode: 'payment',
-      success_url: `${request.headers.get('origin')}/?success=true`,
-      cancel_url: `${request.headers.get('origin')}/?canceled=true`,
+      line_items: lineItems.filter(item => item.quantity > 0),
+      mode: "payment",
+      success_url: `${request.headers.get("origin")}/?success=true`,
+      cancel_url: `${request.headers.get("origin")}/?canceled=true`,
+      allow_promotion_codes: true, 
     });
 
     console.log('Stripe session created:', session.url);
