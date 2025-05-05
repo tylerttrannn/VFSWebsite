@@ -10,6 +10,7 @@ import Events1 from "./pages/EventSections/EventPage1";
 import Events2 from "./pages/EventSections/EventPage2.js";
 import Events3 from "./pages/EventSections/EventPage3.js";
 import Footer from "./components/Footer.jsx";
+import UpcomingEventsSection from './pages/UpcomingEventsSection/UpcomingEventsSection';
 
 function App() {
     return (
@@ -21,6 +22,7 @@ function App() {
                     <Route path={'/about'} element={<About/>}/>
                     <Route path={'/news'} element={<News/>}/>
                     <Route path={'/events'} element={<Events/>}/>
+                    <Route path={'/upcoming-events'} element={<UpcomingEventsSection/>}/>
                     <Route path={'/projects'} element={<Projects/>}/>
                     <Route path={'/events/1'} element={<Events1/>}/>
                     <Route path={'/events/2'} element={<Events2/>}/>

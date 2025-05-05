@@ -15,7 +15,6 @@ export default function Home() {
             <Divider/>
             <MissionStatement/>
             <ProjectSection/>
-            <StripeCheckout/>
             <TeamSection/>
             <Divider/>
             <UpcomingEvents/>

@@ -9,19 +9,11 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card"
-import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select"
+
 import { useState } from "react"
 import { Separator } from "@/components/ui/separator"
  
-
 export default function StripeCheckout() {
 
 
@@ -43,11 +35,11 @@ export default function StripeCheckout() {
             body: JSON.stringify({
               lineItems: [
                 {
-                  price: "price_1RK8Q4GgKRzpwlpovxqWJ1kL", // $25 Industry Professional
+                  price: "price_1RLI4EKClKMtvvIEL060WO6L", // $25 Industry Professional
                   quantity: counter,
                 },
                 {
-                  price: "price_1RK11KGgKRzpwlpoFnNXzNOd", // $10 Student
+                  price: "price_1RLI4WKClKMtvvIELO6bx1se", // $10 Student
                   quantity: studentCounter,
                 },
               ],
@@ -72,7 +64,7 @@ export default function StripeCheckout() {
             <Card className="w-[450px] sm:w-[450px] md:w-[550px] lg:w-[850px] ">
                 <CardHeader>
                     <CardTitle>Purchase Tickets</CardTitle>
-                    <CardDescription>Select your tickets for the VFS Career Networking Night</CardDescription>
+                    <CardDescription>Select your tickets for the Aerospace Career Flight Path </CardDescription>
                 </CardHeader>
                 <CardContent className = "space-y-3">
                 <div className="grid w-full gap-4">
@@ -107,7 +99,9 @@ export default function StripeCheckout() {
                     <div className="flex flex-row justify-between items-center">
                     <div className="flex flex-col">
                         <Label className="text-md font-medium">Students</Label>
-                        <Label className="text-muted-foreground">$10.00</Label>
+                        <Label className="text-muted-foreground mb-4">$10.00</Label>
+                        <Label className="text-muted-foreground">VFS national members eligible for reimbursement – email ticket confirmation along with membership number or email used to register to vfsatuci@gmail.com</Label>
+
                     </div>
 
                     <div className="flex items-center space-x-4">
