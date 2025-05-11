@@ -11,6 +11,8 @@ import Events2 from "./pages/EventSections/EventPage2.js";
 import Events3 from "./pages/EventSections/EventPage3.js";
 import Footer from "./components/Footer.jsx";
 import UpcomingEventsSection from './pages/UpcomingEventsSection/UpcomingEventsSection';
+import SuccessPage from './pages/HomeSections/StripeSucess';
+import CancelPage from './pages/HomeSections/StripeCancel';
 
 function App() {
     return (
@@ -27,6 +29,8 @@ function App() {
                     <Route path={'/events/1'} element={<Events1/>}/>
                     <Route path={'/events/2'} element={<Events2/>}/>
                     <Route path={'/events/3'} element={<Events3/>}/>
+                    <Route path={'/success'} element={<SuccessPage/>}/>
+                    <Route path={'/cancel'} element={<CancelPage/>}/>
                 </Routes>
             </div>
             <Footer/>

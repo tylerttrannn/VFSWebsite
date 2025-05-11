@@ -1,5 +1,4 @@
-import rotocraft_workshop_4 from "../../assets/images/Events/James_Bechler_Rotorcraft_Workshop.webp"
-import StripeCheckout from "./StripeCheckout"
+import rotocraft_workshop_4 from "../../assets/Events/upcoming_events/panelflight.png"
 export default function UpcomingEvents() {
     return (
         <div className={"py-5 bg-white flex flex-col  border-y-2 "}>

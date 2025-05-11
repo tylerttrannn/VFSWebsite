@@ -22,8 +22,8 @@ export default async (request, context) => {
     const session = await stripe.checkout.sessions.create({
       line_items: lineItems.filter(item => item.quantity > 0),
       mode: "payment",
-      success_url: `${request.headers.get("origin")}/?success=true`,
-      cancel_url: `${request.headers.get("origin")}/?canceled=true`,
+      success_url: `${request.headers.get("origin")}/success`,
+      cancel_url: `${request.headers.get("origin")}/cancel`,      
       allow_promotion_codes: true, 
     });
 

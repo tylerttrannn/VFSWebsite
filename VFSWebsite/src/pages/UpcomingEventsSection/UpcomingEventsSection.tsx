@@ -1,6 +1,5 @@
 
-import rotorcraft_flyer3 from "../../assets/images/Events/rotorcraft_workshop3/flyer.png"
-import netowrking_flyer from "../../../src/assets/Events/upcoming_events/panel.png"
+import netowrking_flyer from "../../../src/assets/Events/upcoming_events/panelflight.png"
 
 import EventCarousel from "../EventSections/EventCarsouel"
 import StripeCheckout from "../HomeSections/StripeCheckout"

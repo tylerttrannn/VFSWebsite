@@ -20,8 +20,8 @@ export default function StripeCheckout() {
     const [counter, setCounter] = useState(0); 
     const [studentCounter, setStudentCounter] = useState(0); 
     
-    const INDUSTRY_PRICE = 25;
-    const STUDENT_PRICE = 10;
+    const INDUSTRY_PRICE = 20;
+    const STUDENT_PRICE = 5;
     const total = counter * INDUSTRY_PRICE + studentCounter * STUDENT_PRICE;
   
 
@@ -35,11 +35,11 @@ export default function StripeCheckout() {
             body: JSON.stringify({
               lineItems: [
                 {
-                  price: "price_1RLI4EKClKMtvvIEL060WO6L", // $25 Industry Professional
+                  price: "price_1RM04JKClKMtvvIEuJn2Cbpl", // $20 Industry Professional
                   quantity: counter,
                 },
                 {
-                  price: "price_1RLI4WKClKMtvvIELO6bx1se", // $10 Student
+                  price: "price_1RM04SKClKMtvvIEEssN0SsL", // $5 Student
                   quantity: studentCounter,
                 },
               ],
@@ -60,8 +60,8 @@ export default function StripeCheckout() {
 
     return (
         <div className="flex flex-col justify-center items-center min-h-[220px] pt-10 pb-10 0  ">             
-            <div className = "flex flex-row space-x-14 ">
-            <Card className="w-[450px] sm:w-[450px] md:w-[550px] lg:w-[850px] ">
+            <div className="flex flex-col gap-8 md:flex-row md:gap-14">
+            <Card className="w-full max-w-[450px] sm:max-w-[550px] lg:max-w-[850px]">
                 <CardHeader>
                     <CardTitle>Purchase Tickets</CardTitle>
                     <CardDescription>Select your tickets for the Aerospace Career Flight Path </CardDescription>
@@ -71,7 +71,7 @@ export default function StripeCheckout() {
                     <div className="flex flex-row justify-between items-center">
                     <div className="flex flex-col">
                         <Label className="text-md font-medium">Industry Professional</Label>
-                        <Label className="text-muted-foreground">$25.00</Label>
+                        <Label className="text-muted-foreground">$20.00</Label>
                     </div>
 
                     <div className="flex items-center space-x-4">
@@ -99,8 +99,8 @@ export default function StripeCheckout() {
                     <div className="flex flex-row justify-between items-center">
                     <div className="flex flex-col">
                         <Label className="text-md font-medium">Students</Label>
-                        <Label className="text-muted-foreground mb-4">$10.00</Label>
-                        <Label className="text-muted-foreground">VFS national members eligible for reimbursement – email ticket confirmation along with membership number or email used to register to vfsatuci@gmail.com</Label>
+                        <Label className="text-muted-foreground mb-4">$5.00</Label>
+                        <Label className="text-muted-foreground">VFS national members eligible for promo code – email membership number or email used to register to vfsatuci@gmail.com</Label>
 
                     </div>
 
