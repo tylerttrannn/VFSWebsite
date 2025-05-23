@@ -26,6 +26,7 @@ export default function Navbar() {
                     <Link to="/upcoming-events" className={"relative px-4 py-2 ease-in-out duration-300 hover:bg-grey/10 hover:px-4 hover:py-2 hover:rounded-sm"}>Upcoming Events</Link>
                     <Link to="/events/1" className={"relative px-4 py-2 ease-in-out duration-300 hover:bg-grey/10 hover:px-4 hover:py-2 hover:rounded-sm"}>Past Events</Link>
                     <Link to="/projects" className={"relative px-4 py-2 ease-in-out duration-300 hover:bg-grey/10 hover:px-4 hover:py-2 hover:rounded-sm"}>Projects</Link>
+                    <Link to="/student-quarter" className={"relative px-4 py-2 ease-in-out duration-300 hover:bg-grey/10 hover:px-4 hover:py-2 hover:rounded-sm"}>Member of the Quarter</Link>
 
                 </div>
                 <div className="hidden xl:flex gap-8 text-lg text-grey">
@@ -55,8 +56,8 @@ export default function Navbar() {
                     <Link to="upcoming-events" className={`${buttonVariants({ variant: "ghost" })} w-full`} onClick={() => setIsOpen(false)}>Upcoming Events</Link>
                     <Link to="/events/1" className={`${buttonVariants({ variant: "ghost" })} w-full`} onClick={() => setIsOpen(false)}>Past Events</Link>
                     <Link to="/projects" className={`${buttonVariants({ variant: "ghost" })} w-full`} onClick={() => setIsOpen(false)}>Projects</Link>
+                    <Link to="/student-quarter" className={`${buttonVariants({ variant: "ghost" })} w-full`} onClick={() => setIsOpen(false)}>Member of the Quarter</Link>
 
-                    
                     <div className="flex gap-6 text-lg text-grey">
                         <Link to="https://www.instagram.com/vfs_uci/" className="hover:text-yellow">
                             <FontAwesomeIcon icon={faInstagram} />

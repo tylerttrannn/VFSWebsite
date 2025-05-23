@@ -13,6 +13,7 @@ import Footer from "./components/Footer.jsx";
 import UpcomingEventsSection from './pages/UpcomingEventsSection/UpcomingEventsSection';
 import SuccessPage from './pages/HomeSections/StripeSucess';
 import CancelPage from './pages/HomeSections/StripeCancel';
+import StudentQuarter from './pages/StudentSection/StudentQuarter';
 
 function App() {
     return (
@@ -25,6 +26,7 @@ function App() {
                     <Route path={'/news'} element={<News/>}/>
                     <Route path={'/events'} element={<Events/>}/>
                     <Route path={'/upcoming-events'} element={<UpcomingEventsSection/>}/>
+                    <Route path={'/student-quarter'} element={<StudentQuarter/>}/>
                     <Route path={'/projects'} element={<Projects/>}/>
                     <Route path={'/events/1'} element={<Events1/>}/>
                     <Route path={'/events/2'} element={<Events2/>}/>

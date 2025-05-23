@@ -1,64 +1,77 @@
+import React from "react";
+import EventCarousel from "../EventSections/EventCarsouel";
 
-import netowrking_flyer from "../../../src/assets/Events/upcoming_events/panelflight.png"
+interface Event {
+  title: string;
+  date?: string;
+  description?: string;
+  images?: string[];
+}
 
-import EventCarousel from "../EventSections/EventCarsouel"
-import StripeCheckout from "../HomeSections/StripeCheckout"
-
-export default function UpcomingEventSection() {
-
-  const events = [
-      {
-          title: "Aerospace Career Flight Path ",
-          date: "May 14, 2025",
-          description: "The Vertical Flight Society at UCI is thrilled to announce an exclusive aerospace career panel featuring distinguished industry professionals! This engaging session will provide valuable insights into aerospace career trajectories, from early-career positions to executive leadership roles. Join us to learn from and connect with experienced panelists who will share their career journeys, industry tips, and strategies for success.",
-          images: [netowrking_flyer],
-      },
+const UpcomingEventSection: React.FC = () => {
+  const events: Event[] = [
+    // {
+    //   title: "Aerospace Career Panel",
+    //   date: "May 28, 2025",
+    //   description:
+    //     "Join us for an engaging discussion with professionals from the aerospace industry",
+    //   images: [networking_flyer],
+    // },
   ];
 
   return (
-<div className="space-y-8 max-w-7xl mx-auto px-4 sm:px-8 lg:px-16 pb-16 text-base sm:text-lg md:text-[1.15rem] leading-relaxed">
-  <h1 className="text-3xl sm:text-5xl font-extrabold text-center sm:text-left my-12">
-    Upcoming Events
-  </h1>
+    <section className="max-w-7xl mx-auto px-4 sm:px-8 lg:px-16 py-16 space-y-16">
+      <h1 className="text-3xl sm:text-5xl font-extrabold text-center text-[#C30D3B]">
+        Upcoming Events
+      </h1>
 
-  {events.map((event, index) => (
-  <div className="px-4 sm:px-8 lg:px-16">
-    <div
-      key={index}
-      className={`flex flex-col-reverse md:flex-row ${
-        index % 2 !== 0 ? "md:flex-row-reverse" : ""
-      } gap-6 md:gap-12 items-center`}
-    >
-      {/* Description */}
-      <div className="md:w-1/2 w-full">
-        <div className="space-y-4">
-          <h1 className="text-[#C30D3B] font-bold text-2xl sm:text-3xl md:text-4xl">
-            {event.title}
-          </h1>
-          
-          <h2 className="text-xl sm:text-2xl font-semibold">{event.date}</h2>
-          <h2 className="text-xl sm:text-2xl font-semibold">Location: ISEB 1010</h2>
-          <h2 className="text-xl sm:text-2xl font-semibold">Time: 5:00 - 6:30 PM</h2>
-
-          <p>{event.description}</p>
+      {events.length === 0 ? (
+        <div className="text-center text-xl sm:text-2xl text-gray-500 py-12">
+          No upcoming events at the moment. Check back soon!
         </div>
-      </div>
+      ) : (
+        events.map((event, idx) => (
+          <div
+            key={idx}
+            className={`
+              flex flex-col-reverse md:flex-row
+              ${idx % 2 !== 0 ? "md:flex-row-reverse" : ""}
+              gap-8 md:gap-16 items-center
+              border rounded-xl shadow-lg p-6 bg-white
+            `}
+          >
+            {/* Text */}
+            <div className="md:w-1/2 w-full space-y-4">
+              <h2 className="text-2xl sm:text-3xl font-bold text-[#C30D3B]">
+                {event.title}
+              </h2>
+              {event.date && (
+                <h3 className="text-lg sm:text-xl font-semibold text-gray-600">
+                  {event.date}
+                </h3>
+              )}
+              {event.description && (
+                <p className="text-gray-700">{event.description}</p>
+              )}
+              {/* Example: RSVP button */}
+              {/* <StripeCheckout eventId={...} /> */}
+            </div>
 
-      {/* Image */}
-      <div className="md:w-1/2 w-full flex items-center justify-center">
-        {event.images?.length > 0 && <EventCarousel images={event.images} />}
-      </div>
-    </div>
-  </div>
-))}
-
-
-  <div className="flex flex-col pt-12 items-center">
-    <h1 className = "text-3xl sm:text-4xl font-extrabold text-center sm:text-left">Purchase Your Tickets Below</h1>
-    <StripeCheckout />
-  </div>
-</div>
-
-
+            {/* Image or Carousel */}
+            <div className="md:w-1/2 w-full flex justify-center">
+              {event.images && event.images.length > 0 ? (
+                <EventCarousel images={event.images} />
+              ) : (
+                <div className="w-[300px] h-[200px] flex items-center justify-center bg-gray-100 rounded-lg text-gray-400 text-sm">
+                  No image available
+                </div>
+              )}
+            </div>
+          </div>
+        ))
+      )}
+    </section>
   );
-}
+};
+
+export default UpcomingEventSection;
